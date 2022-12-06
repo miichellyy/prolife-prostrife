@@ -1,0 +1,307 @@
+State,Category,Rank
+New Jersey,education_rank,6
+New Jersey,financial_rank,16
+New Jersey,health_nutrition_rank,34
+New Jersey,housing_rank,18
+New Jersey,resources_rank,34
+New Jersey,total_spending_rank,15
+California,education_rank,16
+California,financial_rank,11
+California,health_nutrition_rank,8
+California,housing_rank,13
+California,resources_rank,14
+California,total_spending_rank,9
+Washington,education_rank,22
+Washington,financial_rank,7
+Washington,health_nutrition_rank,26
+Washington,housing_rank,12
+Washington,resources_rank,11
+Washington,total_spending_rank,19
+Oregon,education_rank,21
+Oregon,financial_rank,6
+Oregon,health_nutrition_rank,13
+Oregon,housing_rank,16
+Oregon,resources_rank,9
+Oregon,total_spending_rank,10
+Connecticut,education_rank,7
+Connecticut,financial_rank,17
+Connecticut,health_nutrition_rank,23
+Connecticut,housing_rank,6
+Connecticut,resources_rank,28
+Connecticut,total_spending_rank,7
+New York,education_rank,3
+New York,financial_rank,5
+New York,health_nutrition_rank,2
+New York,housing_rank,9
+New York,resources_rank,15
+New York,total_spending_rank,2
+Maine,education_rank,14
+Maine,financial_rank,3
+Maine,health_nutrition_rank,25
+Maine,housing_rank,7
+Maine,resources_rank,38
+Maine,total_spending_rank,11
+Maryland,education_rank,19
+Maryland,financial_rank,20
+Maryland,health_nutrition_rank,38
+Maryland,housing_rank,8
+Maryland,resources_rank,6
+Maryland,total_spending_rank,25
+Vermont,education_rank,4
+Vermont,financial_rank,4
+Vermont,health_nutrition_rank,5
+Vermont,housing_rank,5
+Vermont,resources_rank,25
+Vermont,total_spending_rank,3
+New Mexico,education_rank,24
+New Mexico,financial_rank,29
+New Mexico,health_nutrition_rank,4
+New Mexico,housing_rank,45
+New Mexico,resources_rank,19
+New Mexico,total_spending_rank,14
+Hawaii,education_rank,41
+Hawaii,financial_rank,21
+Hawaii,health_nutrition_rank,22
+Hawaii,housing_rank,14
+Hawaii,resources_rank,10
+Hawaii,total_spending_rank,27
+Rhode Island,education_rank,8
+Rhode Island,financial_rank,15
+Rhode Island,health_nutrition_rank,21
+Rhode Island,housing_rank,4
+Rhode Island,resources_rank,21
+Rhode Island,total_spending_rank,8
+Illinois,education_rank,20
+Illinois,financial_rank,23
+Illinois,health_nutrition_rank,44
+Illinois,housing_rank,22
+Illinois,resources_rank,4
+Illinois,total_spending_rank,34
+Montana,education_rank,27
+Montana,financial_rank,49
+Montana,health_nutrition_rank,33
+Montana,housing_rank,44
+Montana,resources_rank,41
+Montana,total_spending_rank,36
+Minnesota,education_rank,23
+Minnesota,financial_rank,14
+Minnesota,health_nutrition_rank,18
+Minnesota,housing_rank,17
+Minnesota,resources_rank,7
+Minnesota,total_spending_rank,17
+Massachusetts,education_rank,9
+Massachusetts,financial_rank,12
+Massachusetts,health_nutrition_rank,6
+Massachusetts,housing_rank,2
+Massachusetts,resources_rank,37
+Massachusetts,total_spending_rank,6
+District of Columbia,education_rank,1
+District of Columbia,financial_rank,1
+District of Columbia,health_nutrition_rank,1
+District of Columbia,housing_rank,1
+District of Columbia,resources_rank,1
+District of Columbia,total_spending_rank,1
+Nevada,education_rank,45
+Nevada,financial_rank,33
+Nevada,health_nutrition_rank,45
+Nevada,housing_rank,34
+Nevada,resources_rank,8
+Nevada,total_spending_rank,47
+Delaware,education_rank,13
+Delaware,financial_rank,22
+Delaware,health_nutrition_rank,12
+Delaware,housing_rank,15
+Delaware,resources_rank,35
+Delaware,total_spending_rank,13
+New Hampshire,education_rank,11
+New Hampshire,financial_rank,48
+New Hampshire,health_nutrition_rank,42
+New Hampshire,housing_rank,10
+New Hampshire,resources_rank,30
+New Hampshire,total_spending_rank,32
+North Carolina,education_rank,36
+North Carolina,financial_rank,42
+North Carolina,health_nutrition_rank,24
+North Carolina,housing_rank,23
+North Carolina,resources_rank,42
+North Carolina,total_spending_rank,33
+Florida,education_rank,42
+Florida,financial_rank,39
+Florida,health_nutrition_rank,37
+Florida,housing_rank,24
+Florida,resources_rank,13
+Florida,total_spending_rank,41
+Virginia,education_rank,28
+Virginia,financial_rank,32
+Virginia,health_nutrition_rank,39
+Virginia,housing_rank,29
+Virginia,resources_rank,20
+Virginia,total_spending_rank,35
+Alaska,education_rank,5
+Alaska,financial_rank,13
+Alaska,health_nutrition_rank,11
+Alaska,housing_rank,3
+Alaska,resources_rank,16
+Alaska,total_spending_rank,5
+Pennsylvania,education_rank,12
+Pennsylvania,financial_rank,9
+Pennsylvania,health_nutrition_rank,16
+Pennsylvania,housing_rank,19
+Pennsylvania,resources_rank,48
+Pennsylvania,total_spending_rank,12
+Texas,education_rank,38
+Texas,financial_rank,46
+Texas,health_nutrition_rank,43
+Texas,housing_rank,47
+Texas,resources_rank,51
+Texas,total_spending_rank,46
+Wisconsin,education_rank,18
+Wisconsin,financial_rank,18
+Wisconsin,health_nutrition_rank,31
+Wisconsin,housing_rank,50
+Wisconsin,resources_rank,18
+Wisconsin,total_spending_rank,26
+Colorado,education_rank,37
+Colorado,financial_rank,38
+Colorado,health_nutrition_rank,40
+Colorado,housing_rank,20
+Colorado,resources_rank,3
+Colorado,total_spending_rank,42
+Georgia,education_rank,39
+Georgia,financial_rank,47
+Georgia,health_nutrition_rank,46
+Georgia,housing_rank,33
+Georgia,resources_rank,50
+Georgia,total_spending_rank,48
+Kansas,education_rank,31
+Kansas,financial_rank,44
+Kansas,health_nutrition_rank,36
+Kansas,housing_rank,39
+Kansas,resources_rank,29
+Kansas,total_spending_rank,37
+Tennessee,education_rank,48
+Tennessee,financial_rank,35
+Tennessee,health_nutrition_rank,32
+Tennessee,housing_rank,28
+Tennessee,resources_rank,45
+Tennessee,total_spending_rank,43
+South Carolina,education_rank,35
+South Carolina,financial_rank,41
+South Carolina,health_nutrition_rank,9
+South Carolina,housing_rank,35
+South Carolina,resources_rank,26
+South Carolina,total_spending_rank,24
+Kentucky,education_rank,32
+Kentucky,financial_rank,25
+Kentucky,health_nutrition_rank,10
+Kentucky,housing_rank,32
+Kentucky,resources_rank,44
+Kentucky,total_spending_rank,22
+Michigan,education_rank,26
+Michigan,financial_rank,28
+Michigan,health_nutrition_rank,28
+Michigan,housing_rank,27
+Michigan,resources_rank,39
+Michigan,total_spending_rank,30
+Mississippi,education_rank,34
+Mississippi,financial_rank,31
+Mississippi,health_nutrition_rank,7
+Mississippi,housing_rank,40
+Mississippi,resources_rank,49
+Mississippi,total_spending_rank,20
+Wyoming,education_rank,2
+Wyoming,financial_rank,10
+Wyoming,health_nutrition_rank,3
+Wyoming,housing_rank,51
+Wyoming,resources_rank,5
+Wyoming,total_spending_rank,4
+Oklahoma,education_rank,47
+Oklahoma,financial_rank,30
+Oklahoma,health_nutrition_rank,41
+Oklahoma,housing_rank,37
+Oklahoma,resources_rank,40
+Oklahoma,total_spending_rank,45
+Ohio,education_rank,29
+Ohio,financial_rank,19
+Ohio,health_nutrition_rank,17
+Ohio,housing_rank,11
+Ohio,resources_rank,27
+Ohio,total_spending_rank,21
+Iowa,education_rank,25
+Iowa,financial_rank,43
+Iowa,health_nutrition_rank,14
+Iowa,housing_rank,49
+Iowa,resources_rank,24
+Iowa,total_spending_rank,23
+Alabama,education_rank,40
+Alabama,financial_rank,36
+Alabama,health_nutrition_rank,19
+Alabama,housing_rank,38
+Alabama,resources_rank,47
+Alabama,total_spending_rank,31
+Utah,education_rank,49
+Utah,financial_rank,51
+Utah,health_nutrition_rank,50
+Utah,housing_rank,42
+Utah,resources_rank,32
+Utah,total_spending_rank,1
+Indiana,education_rank,46
+Indiana,financial_rank,26
+Indiana,health_nutrition_rank,29
+Indiana,housing_rank,26
+Indiana,resources_rank,31
+Indiana,total_spending_rank,38
+Louisiana,education_rank,33
+Louisiana,financial_rank,37
+Louisiana,health_nutrition_rank,27
+Louisiana,housing_rank,21
+Louisiana,resources_rank,17
+Louisiana,total_spending_rank,29
+West Virginia,education_rank,17
+West Virginia,financial_rank,8
+West Virginia,health_nutrition_rank,15
+West Virginia,housing_rank,41
+West Virginia,resources_rank,23
+West Virginia,total_spending_rank,16
+Arizona,education_rank,50
+Arizona,financial_rank,24
+Arizona,health_nutrition_rank,35
+Arizona,housing_rank,46
+Arizona,resources_rank,36
+Arizona,total_spending_rank,44
+North Dakota,education_rank,10
+North Dakota,financial_rank,2
+North Dakota,health_nutrition_rank,48
+North Dakota,housing_rank,25
+North Dakota,resources_rank,3
+North Dakota,total_spending_rank,18
+South Dakota,education_rank,44
+South Dakota,financial_rank,40
+South Dakota,health_nutrition_rank,51
+South Dakota,housing_rank,30
+South Dakota,resources_rank,12
+South Dakota,total_spending_rank,49
+Arkansas,education_rank,30
+Arkansas,financial_rank,34
+Arkansas,health_nutrition_rank,20
+Arkansas,housing_rank,48
+Arkansas,resources_rank,46
+Arkansas,total_spending_rank,28
+Nebraska,education_rank,14
+Nebraska,financial_rank,27
+Nebraska,health_nutrition_rank,49
+Nebraska,housing_rank,36
+Nebraska,resources_rank,33
+Nebraska,total_spending_rank,39
+Idaho,education_rank,51
+Idaho,financial_rank,45
+Idaho,health_nutrition_rank,47
+Idaho,housing_rank,43
+Idaho,resources_rank,43
+Idaho,total_spending_rank,50
+Missouri,education_rank,43
+Missouri,financial_rank,50
+Missouri,health_nutrition_rank,30
+Missouri,housing_rank,31
+Missouri,resources_rank,22
+Missouri,total_spending_rank,40

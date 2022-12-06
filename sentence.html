@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+	
+</body>
+
+<!-- 
+	This is the stylesheet provided by jQuery
+	You can navigate to the URL (without the leading "//") and download the sheet, then modify it
+	Check out things like fonts, background colors, background images, etc. Super customizable!
+-->
+<link rel="stylesheet" href="./dropdown.css">
+
+
+<style>
+	/*
+		Note that jQuery will hide all `select` elements and replace them with more customizable span/divs
+		I usually hide them manually in the CSS, since jQuery won't hide them until the page loads
+		(and I don't like seeing the ugly dropdowns flash on page load)
+	*/
+	select{
+		display: none;
+	}
+	/*
+		Just some placeholder CSS so this page doesn't look TOO awful.
+	*/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0px none;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+}
+	div.boilerplateText, .ui-selectmenu-button{
+		float: left;
+		font-family: Roboto;
+		font-size: 43px;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	div.boilerplateText{
+		padding-top: 8px;
+	}
+    h1{
+        font-family: Roboto;
+		font-size: 43px;
+    }
+    body {
+        margin: 0;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 43px;
+        width: 80%;
+        padding: 40;
+}
+
+.sentence {
+    background-color: #E5A939;
+    padding: 20;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    line-height: 61px;
+    margin-bottom: 160px;
+}
+div {
+    display: block;
+}
+#hide-np {
+    display: none;
+}
+.stateContainer {
+    margin-top: 20px;
+}
+
+.menuContainer.active {
+    background-color: #5e100a; 
+    color: white;
+}
+.menuContainer, .menuContainerYears {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    top: px;
+    position: relative;
+}
+span.sentence {
+    font-size: 43px;
+    font-weight: bold;
+    color: white;
+    font-family: roboto;
+}
+</style>
+
+<body>
+<main>
+	<!-- 
+		A simple dropdown. Note that the `value` property (AL, AK, AR) is what is going
+		to be used in your JavaScript (see below). The text inside the `option` tag 
+		(Alabama, Alaska, Arizona) is what is actually displayed, and it can be whatever you like.
+	-->
+   
+	<div class = "boilerplateText">I live in</div>
+	
+	<div class="menuContainer" id="stateContainer">
+	<span id="state_selector_wrapper">
+		<select id="cbsa_selector" class="locationMenu disabled" style="display: none";></select>
+<select id = "stateMenu">
+	<option value = "myState">My State</option>
+		<option value = "AL">Alabama</option>
+		<option value = "AK">Alaska</option>
+		<option value = "AR">Arizona</option>
+        <option value = "AK">Arkansas</option>
+		<option value = "CA">California</option>
+		<option value = "CO">Colorado</option>
+        <option value = "CT">Connecticut</option>
+		<option value = "DE">Delaware</option>
+        <option value = "DC">District of Columbia</option>
+		<option value = "FL">Florida</option>
+		<option value = "GA">Georgia</option>
+        <option value = "HI">Hawaii</option>
+		<option value = "ID">Idaho</option>
+		<option value = "IL">Illinois</option>
+        <option value = "AK">Indiana</option>
+		<option value = "AK">Iowa</option>
+		<option value = "AR">Kansas</option>
+        <option value = "AL">Kentucky</option>
+		<option value = "AK">Louisiana</option>
+		<option value = "AR">Maine</option>
+        <option value = "AL">Maryland</option>
+		<option value = "AK">Massachusetts</option>
+		<option value = "AR">Michigan</option>
+        <option value = "AL">Minnesota</option>
+		<option value = "AK">Mississippi</option>
+		<option value = "AR">Missouri</option>
+        <option value = "AK">Montana</option>
+		<option value = "AK">Nebraska</option>
+		<option value = "AR">Nevada</option>
+        <option value = "AL">New Hampshire</option>
+		<option value = "AK">New Jersey</option>
+		<option value = "AR">New Mexico</option>
+        <option value = "AL">New York</option>
+		<option value = "AK">North Carolina</option>
+		<option value = "AR">North Dakota</option>
+        <option value = "AL">Ohio</option>
+		<option value = "AK">Oklahoma</option>
+		<option value = "AR">Oregon</option>
+        <option value = "AK">Indiana</option>
+		<option value = "AK">Iowa</option>
+		<option value = "AR">Pennsylvania</option>
+        <option value = "AL">Rhode Island</option>
+		<option value = "AK">South Carolina</option>
+		<option value = "AR">South Dakota</option>
+        <option value = "AL">Tennessee</option>
+		<option value = "AK">Texas</option>
+		<option value = "AR">Utah</option>
+        <option value = "AR">Vermont</option>
+        <option value = "AL">Virginia</option>
+		<option value = "AK">Washington</option>
+		<option value = "AR">West Virginia</option>
+        <option value = "AL">Wisconsin</option>
+		<option value = "AK">Wyoming</option>	
+</select>
+</span>
+</div>
+
+
+    <div class="menuContainer" id="categoryContainer"
+        <span id="cbsa_selector_wrapper">
+            <select id="cbsa_selector" class="locationMenu disabled" style="display: none";></select>
+	<select id = "categoryMenu">
+        <option value = "total_spending">Total Spending</option>
+		<option value = "health">Health</option>
+		<option value = "income">Income</option>
+		<option value = "education">Education</option>
+        <option value = "financial">Financial Support</option>
+        <option value = "education">Education</option>
+	</select>
+	</span>
+
+   Abortion access in my state is restricted
+</div>
+</div>
+</main>
+</body>
+
+<script>
+    d3.csv("./State_wide.csv", function(data) {
+        for (var i = 0; i < data.length; i++) {
+            console.log(data[i].State);
+            console.log(data[i].health_nutrition_rank)
+        }
+    });
+    
+    </script>
+<!-- 
+	I made this as a non-Svelte page, just because it's what I'm used to.
+	Note that unlike in the Svelte apps, simple html pages like this want
+	the `script` tags to be at the bottom (not the top) of the document
+-->
+<!--
+	jQuery, a library that does a variety things, including DOM manipulation.
+	
+	Note: jQuery refers to itself as `$`, so in the same way you might call `d3.method()`
+	for d3 functions you call `$.method()` for jQuery functions). If you want to use Svelte,
+	then JS might get confused about also using `$` for `$:` declarations. Here's a
+	stackoverflow thread of resolving this!
+	
+	https://stackoverflow.com/questions/58219453/how-do-i-use-jquery-in-svelte
+-->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<!--
+	jQuery-UI is a separate plugin to jQuery, which we're using to create `selectmenu`
+	elements. Check out the docs for selectmenu, here:
+	
+	https://jqueryui.com/selectmenu/
+	Lots of other cool elements available here as well!
+-->
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<script>
+	/*
+		Some dummy data. If you have a CSV document with column headers `state`,
+		`incomeRank`, and `educationRank`, then d3 will read it in to this format.
+		Check out the d3 docs for more info
+		https://github.com/d3/d3-dsv
+		Note: some front end developers will tell you that it's not a best practice
+		to include both jQuery and d3 in a single project, since they do similar things
+		(DOM manipulation). While that's true for production-level sites, I think it's
+		100% fine to use both here.
+	*/
+	data = [
+			{"state": "AL", "healthRank" : 2, "incomeRank": 1, "educationRank": 3},
+			{"state": "AK", "healthRank" : 1, "incomeRank": 2, "educationRank": 2},
+			{"state": "AR", "healthRank" : 3, "incomeRank": 3, "educationRank": 1}
+		]
+
+	/*
+		This code does two things:
+		1.	the call to `selectmenu` creates the UI element (i.e. hides the `select`
+			element and creates the styled divs/spans which work like a dropdown)
+		2.	the `change` event handler does something when the value of the menu changes
+			(see the docs linked above for more useful methods)
+	*/
+	<script> $("#stateMenu").selectmenu({
+  		change: function( event, ui ) {
+  			// you can remove this, just a reminder to console.log early and often
+  			console.log("selected State is", ui.item.value)
+  			// see the functions below!
+  			displayRank(getRank(ui.item.value,getCategory()))
+  		}
+	});
+</script>
+	/*
+		Similar code to the stateMenu above. Note that this doesn't follow the 
+		rule we chatted about yesterday, of "do not copy/paste". In theory, you
+		could make this into a Svelte component. I think it's simple enough that
+		there's probably no need, but could be good practice.
+	*/
+	<script>
+	$("#categoryMenu").selectmenu({
+  		change: function( event, ui ) {
+  			console.log("selected category is", ui.item.value)
+  			displayRank(getRank(getState(), ui.item.value))
+  		}
+	});
+</script>
+	/*
+		Given a state abbreviation and a category name, return the relevant rank
+	*/
+	<script>
+	function getRank(state, category){
+	
+		/*
+			I wrote this in one line, but to break it down:
+			1. 	data.filter is a JS built in function which takes an array and returns
+				a filtered copy of it, based on certain criteria.
+				See more info here:
+				https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+				Note that MDN is a great resource for JS, HTML, and CSS documentation (for vanilla JS)
+			2.	Filter works by looking at every element in an array, and seeing if it matches your criteria.
+				So an identical way to write this would be:
+				let stateDatum = data.filter(function(s){
+					return s.state == state
+				})[0]
+				We're checking if the `state` property of each datum in the array is equal to the `state`
+				variable that was passed as a parameter to `getRank()`
+			3. 	Since `filter` returns an array (in this case an array of length 1), we need to grab the first
+				element of the array, hence the `[0]`
+		*/
+		let stateDatum = data.filter(s => s.state == state)[0]
+		/*
+			Once we've grabbed the datum, use the `category` variable which was passed in
+			as a string to get the relevant rank. So if category is "health", we return
+			stateDatum["healthRank"].
+			Could have this whole function in one line as
+			`return data.filter(s => s.state == state)[0][category + "Rank"]`
+			but I thought that wasn't the nicest looking
+		*/ 
+		return stateDatum[category + "Rank"]
+	}
+</script>
+	/*
+		Two `getter` functions. When you call `getRank`, you need two values
+		(`state` and `category`). One of those two values will be provided
+		within the event handler for the related dropdown menu, but you'll
+		need to grab the other value from the current status of the other dropdown
+	*/
+	<script>
+	function getCategory(){
+		return $("#categoryMenu").val()
+	}
+
+	function getState(){
+		return $("#stateMenu").val()
+	}
+
+	/*
+		Use jQuery to change the text inside the `rankLabel` span
+		I believe your prototype had "1st" "2nd" "3rd" etc text, which
+		you can handle the logic for in this function if you'd like
+	*/
+	function displayRank(rank){
+		$("#rankLabel").text(rank)
+	}
+</script>
+
+</script>
+
+</html>
