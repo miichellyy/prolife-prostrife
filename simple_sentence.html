@@ -23,7 +23,7 @@
 		Trying to set the background styles
 	*/
 	body {
-		background-color: #818943;	
+		background-color: #ffffff;	
   		width: 80%;
 		margin: 120px 40px 40px 90px;
 		
@@ -48,7 +48,7 @@
 	span.sentence{
 		align-items: center;
   		justify-content: center;
-		font-family:  'Roboto', sans-serif;
+		font-family:  'Roboto Condensed', sans-serif;
 		font-size: 43px;
 		font-weight: 300;
 		text-align: center;
@@ -56,7 +56,7 @@
 	}
 
 	h3{
-		font-family:  'Roboto', sans-serif;
+		font-family:  'Roboto Condensed', sans-serif;
 		font-size: 20px;
 		font-weight: normal;
 		font-style: italic;
@@ -66,7 +66,7 @@
 	}
 
 	p{
-		font-family:  'Roboto', sans-serif;
+		font-family:  'Roboto Condensed', sans-serif;
 		color:#454545;
 		font-weight: 300px;
 	}
@@ -76,9 +76,9 @@
 	*/
 	div.boilerplateText, .ui-selectmenu-button{
 		float: auto;
-		font-family:  'Roboto', sans-serif;
-		font-size: 30px;
-		font-weight: bold;
+		font-family:  'Roboto Condensed', sans-serif;
+		font-size: 40px;
+		font-weight: normal;
 	}
 
 	div.boilerplateText{
@@ -99,11 +99,13 @@
 		(Alabama, Alaska, Arizona) is what is actually displayed, and it can be whatever you like.
 	-->
 	<h3>Select your state and category of spending below to begin </h3><br>
-	<div id="sentence-wrapper">
 	<div id="sentence">
-		<span class="sentence">I live in <span id="hide-np" style="display: none;"> state</span>
-		<span id="hide-state" style="display: none;"> State</span>
-	<select id = "stateMenu" name="stateMenu">
+		<span class="sentence">
+		<strong>I live in</strong>
+		<span id="hide-np"> nonprofit</span>
+		</span>
+	<div class="menuContainer active onLoadClass" id="topicContainer">
+		<select id = "stateMenu" name="stateMenu"  style="display: none";>
 		<option value ="My State">Select State &darr;</option>
 		<option value ="Alabama">Alabama</option>
 		<option value ="Alaska">Alaska</option>
@@ -165,7 +167,7 @@
 
 	<span id="hide-category" style="display: none;"> category</span>
 	<select id = "categoryMenu">
-		<option value = "select_category">Select Category &darr;</option>
+		<option value = "Select_category">Select Category &darr;</option>
 		<option value = "total">Total Spending</option>
 		<option value = "health">Health + Nutrition</option>
 		<option value = "financial">Financial Support</option>

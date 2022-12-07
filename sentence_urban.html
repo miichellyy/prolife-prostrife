@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="DESC GOES HERE">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>The People's Sector: A Look at Nonprofit Gains and Losses</title>
+
+        <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic,900" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/urbancss.css">
+        <link rel="stylesheet" href="/jquery.css" type="text/css">
+      
+
+
+    </head>
+
+    <body>
+   
+        <div id = "controls">
+            <div id = "sentence">
+                <span class = "sentence">Explore how<span id = "hide-np"> nonprofit</span></span>
+                <div class = "menuContainer active onLoadClass" id = "topicContainer">
+                    <select id = "topics_selector">
+                        <option name = "all_topics" value = "all_topics">each type of</option>
+                        <option name = "Aggregate" value = "Aggregate">all</option>
+                        <option name = "Arts" value = "Arts">arts</option>
+                        <option name = "Higher-Education" value = "Higher-Education">higher education</option>
+                        <option name = "Other-Education" value = "Other-Education">other education</option>
+                        <option name = "Environment-and-Animals" value = "Environment-and-Animals">environment and animals</option>
+                        <option name = "Hospitals" value = "Hospitals">hospitals</option>
+                        <option name = "Other-Health" value = "Other-Health">other health</option>
+                        <option name = "Human-Services" value = "Human-Services">human services</option>
+                        <option name = "International-and-Foreign-Affairs" value = "International-and-Foreign-Affairs">international and foreign affairs</option>
+                        <option name = "Religion-Related" value = "Religion-Related">religion related</option>
+                        <option name = "Other" value = "Other">other</option>
+                    </select>
+                </div>
+
+                <span class = "sentence"><span id = "hide-nps">nonprofits have </span><span id = "loadText2">changed financially</span></span>
+                <div class = "menuContainer" id = "locationContainer">
+                    <span id = "cbsa_selector_wrapper">
+                        <select id = "cbsa_selector" class = "locationMenu disabled">
+                            <option name = "none" value = "none" selected="true" disabled="true">Select a city...</option>
+                            <option name = "all_cities" value = "all_cities">all cities</option>
+                            <option name = "all-usa-state" value = "all-usa-state">the United States</option>
+                            <option name = "Atlanta-Sandy-Springs-Roswell" value = "Atlanta-Sandy-Springs-Roswell">Atlanta area, GA</option>
+                            <option name = "Austin-Round-Rock" value = "Austin-Round-Rock">Austin area, TX</option>
+                            <option name = "Baltimore-Columbia-Towson" value = "Baltimore-Columbia-Towson">Baltimore area, MD</option>
+                            <option name = "Birmingham-Hoover" value = "Birmingham-Hoover">Birmingham area, AL</option>
+                            <option name = "Boston-Cambridge-Newton" value = "Boston-Cambridge-Newton">Boston area, MA</option>
+                            <option name = "Buffalo-Cheektowaga-Niagara-Falls" value = "Buffalo-Cheektowaga-Niagara-Falls">Buffalo area, NY</option>
+                            <option name = "Charlotte-Concord-Gastonia" value = "Charlotte-Concord-Gastonia">Charlotte area, NC</option>
+                            <option name = "Chicago-Naperville-Elgin" value = "Chicago-Naperville-Elgin">Chicago area, IL</option>
+                            <option name = "Cincinnati" value = "Cincinnati">Cincinnati area, OH</option>
+                            <option name = "Cleveland-Elyria" value = "Cleveland-Elyria">Cleveland area, OH</option>
+                            <option name = "Columbus" value = "Columbus">Columbus area, OH</option>
+                            <option name = "Dallas-Fort-Worth-Arlington" value = "Dallas-Fort-Worth-Arlington">Dallas area, TX</option>
+                            <option name = "Denver-Aurora-Lakewood" value = "Denver-Aurora-Lakewood">Denver area, CO</option>
+                            <option name = "Detroit-Warren-Dearborn" value = "Detroit-Warren-Dearborn">Detroit area, MI</option>
+                            <option name = "Hartford-West-Hartford-East-Hartford" value = "Hartford-West-Hartford-East-Hartford">Hartford area, CT</option>
+                            <option name = "Houston-The-Woodlands-Sugar-Land" value = "Houston-The-Woodlands-Sugar-Land">Houston area, TX</option>
+                            <option name = "Indianapolis-Carmel-Anderson" value = "Indianapolis-Carmel-Anderson">Indianapolis area, IN</option>
+                            <option name = "Jacksonville" value = "Jacksonville">Jacksonville area, FL</option>
+                            <option name = "Kansas-City" value = "Kansas-City">Kansas City area, MO</option>
+                            <option name = "Las-Vegas-Henderson-Paradise" value = "Las-Vegas-Henderson-Paradise">Las Vegas area, NV</option>
+                            <option name = "Los-Angeles-Long-Beach-Anaheim" value = "Los-Angeles-Long-Beach-Anaheim">Los Angeles area, CA</option>
+                            <option name = "Louisville-Jefferson-County" value = "Louisville-Jefferson-County">Louisville area, KY</option>
+                            <option name = "Memphis" value = "Memphis">Memphis area, TN</option>
+                            <option name = "Miami-Fort-Lauderdale-West-Palm-Beach" value = "Miami-Fort-Lauderdale-West-Palm-Beach">Miami area, FL</option>
+                            <option name = "Milwaukee-Waukesha-West-Allis" value = "Milwaukee-Waukesha-West-Allis">Milwaukee area, WI</option>
+                            <option name = "Minneapolis-St-Paul-Bloomington" value = "Minneapolis-St-Paul-Bloomington">Minneapolis area, MN</option>
+                            <option name = "Nashville-Davidson-Murfreesboro-Franklin" value = "Nashville-Davidson-Murfreesboro-Franklin">Nashville area, TN</option>
+                            <option name = "New-Orleans-Metairie" value = "New-Orleans-Metairie">New Orleans area, LA</option>
+                            <option name = "New-York-Newark-Jersey-City" value = "New-York-Newark-Jersey-City">New York area, NY</option>
+                            <option name = "Oklahoma-City" value = "Oklahoma-City">Oklahoma City area, OK</option>
+                            <option name = "Orlando-Kissimmee-Sanford" value = "Orlando-Kissimmee-Sanford">Orlando area, FL</option>
+                            <option name = "Philadelphia-Camden-Wilmington" value = "Philadelphia-Camden-Wilmington">Philadelphia area, PA</option>
+                            <option name = "Phoenix-Mesa-Scottsdale" value = "Phoenix-Mesa-Scottsdale">Phoenix area, AZ</option>
+                            <option name = "Pittsburgh" value = "Pittsburgh">Pittsburgh area, PA</option>
+                            <option name = "Portland-Vancouver-Hillsboro" value = "Portland-Vancouver-Hillsboro">Portland area, OR</option>
+                            <option name = "Providence-Warwick" value = "Providence-Warwick">Providence area, RI</option>
+                            <option name = "Raleigh" value = "Raleigh">Raleigh area, NC</option>
+                            <option name = "Richmond" value = "Richmond">Richmond area, VA</option>
+                            <option name = "Riverside-San-Bernardino-Ontario" value = "Riverside-San-Bernardino-Ontario">Riverside area, CA</option>
+                            <option name = "Sacramento-Roseville-Arden-Arcade" value = "Sacramento-Roseville-Arden-Arcade">Sacramento area, CA</option>
+                            <option name = "Salt-Lake-City" value = "Salt-Lake-City">Salt Lake City area, UT</option>
+                            <option name = "St-Louis" value = "St-Louis">St. Louis area, MO</option>
+                            <option name = "San-Antonio-New-Braunfels" value = "San-Antonio-New-Braunfels">San Antonio area, TX</option>
+                            <option name = "San-Diego-Carlsbad" value = "San-Diego-Carlsbad">San Diego area, CA</option>
+                            <option name = "San-Francisco-Oakland-Hayward" value = "San-Francisco-Oakland-Hayward">San Francisco area, CA</option>
+                            <option name = "San-Jose-Sunnyvale-Santa-Clara" value = "San-Jose-Sunnyvale-Santa-Clara">San Jose area, CA</option>
+                            <option name = "Seattle-Tacoma-Bellevue" value = "Seattle-Tacoma-Bellevue">Seattle area, WA</option>
+                            <option name = "Tampa-St-Petersburg-Clearwater" value = "Tampa-St-Petersburg-Clearwater">Tampa area, FL</option>
+                            <option name = "Virginia-Beach-Norfolk-Newport-News" value = "Virginia-Beach-Norfolk-Newport-News">Virginia Beach area, VA</option>
+                            <option name = "Washington-Arlington-Alexandria" value = "Washington-Arlington-Alexandria">Washington area, DC</option>
+                        </select>
+                    </span>
+                    <span id = "slashSentence"></span>
+                    <span id = "state_selector_wrapper">
+                        <select id = "state_selector" class = "locationMenu enabled">
+                            <option name = "none" value = "none" disabled="true">Select a state...</option>
+                            <option name = "all_states" value = "all_states" selected="true">all states</option>
+                            <option name = "all-usa-state" value = "all-usa-state">the United States</option>
+                            <option name = "AL" value = "AL">Alabama</option>
+                            <option name = "AK" value = "AK">Alaska</option>
+                            <option name = "AZ" value = "AZ">Arizona</option>
+                            <option name = "AR" value = "AR">Arkansas</option>
+                            <option name = "CA" value = "CA">California</option>
+                            <option name = "CO" value = "CO">Colorado</option>
+                            <option name = "CT" value = "CT">Connecticut</option>
+                            <option name = "DE" value = "DE">Delaware</option>
+                            <option name = "DC" value = "DC">District of Columbia</option>
+                            <option name = "FL" value = "FL">Florida</option>
+                            <option name = "GA" value = "GA">Georgia</option>
+                            <option name = "HI" value = "HI">Hawaii</option>
+                            <option name = "ID" value = "ID">Idaho</option>
+                            <option name = "IL" value = "IL">Illinois</option>
+                            <option name = "IN" value = "IN">Indiana</option>
+                            <option name = "IA" value = "IA">Iowa</option>
+                            <option name = "KS" value = "KS">Kansas</option>
+                            <option name = "KY" value = "KY">Kentucky</option>
+                            <option name = "LA" value = "LA">Louisiana</option>
+                            <option name = "ME" value = "ME">Maine</option>
+                            <option name = "MD" value = "MD">Maryland</option>
+                            <option name = "MA" value = "MA">Massachusetts</option>
+                            <option name = "MI" value = "MI">Michigan</option>
+                            <option name = "MN" value = "MN">Minnesota</option>
+                            <option name = "MS" value = "MS">Mississippi</option>
+                            <option name = "MO" value = "MO">Missouri</option>
+                            <option name = "MT" value = "MT">Montana</option>
+                            <option name = "NE" value = "NE">Nebraska</option>
+                            <option name = "NV" value = "NV">Nevada</option>
+                            <option name = "NH" value = "NH">New Hampshire</option>
+                            <option name = "NJ" value = "NJ">New Jersey</option>
+                            <option name = "NM" value = "NM">New Mexico</option>
+                            <option name = "NY" value = "NY">New York</option>
+                            <option name = "NC" value = "NC">North Carolina</option>
+                            <option name = "ND" value = "ND">North Dakota</option>
+                            <option name = "OH" value = "OH">Ohio</option>
+                            <option name = "OK" value = "OK">Oklahoma</option>
+                            <option name = "OR" value = "OR">Oregon</option>
+                            <option name = "PA" value = "PA">Pennsylvania</option>
+                            <option name = "RI" value = "RI">Rhode Island</option>
+                            <option name = "SC" value = "SC">South Carolina</option>
+                            <option name = "SD" value = "SD">South Dakota</option>
+                            <option name = "TN" value = "TN">Tennessee</option>
+                            <option name = "TX" value = "TX">Texas</option>
+                            <option name = "UT" value = "UT">Utah</option>
+                            <option name = "VT" value = "VT">Vermont</option>
+                            <option name = "VA" value = "VA">Virginia</option>
+                            <option name = "WA" value = "WA">Washington</option>
+                            <option name = "WV" value = "WV">West Virginia</option>
+                            <option name = "WI" value = "WI">Wisconsin</option>
+                            <option name = "WY" value = "WY">Wyoming</option>
+                        </select>
+                    </span>
+                </div>
+                
+
+                <span class = "sentence" id = "loadText3"></span>
+                <div class = "menuContainerYears">
+                    <select id = "start_year_selector">
+                        <option name = "start_year-1994" value = "start_year-1994">1994</option>
+                        <option name = "start_year-1995" value = "start_year-1995">1995</option>
+                        <option name = "start_year-1996" value = "start_year-1996">1996</option>
+                        <option name = "start_year-1997" value = "start_year-1997">1997</option>
+                        <option name = "start_year-1998" value = "start_year-1998">1998</option>
+                        <option name = "start_year-1999" value = "start_year-1999">1999</option>
+                        <option name = "start_year-2000" value = "start_year-2000">2000</option>
+                        <option name = "start_year-2001" value = "start_year-2001">2001</option>
+                        <option name = "start_year-2002" value = "start_year-2002">2002</option>
+                        <option name = "start_year-2003" value = "start_year-2003">2003</option>
+                        <option name = "start_year-2004" value = "start_year-2004">2004</option>
+                        <option name = "start_year-2005" value = "start_year-2005" selected="true">2005</option>
+                        <option name = "start_year-2006" value = "start_year-2006">2006</option>
+                        <option name = "start_year-2007" value = "start_year-2007">2007</option>
+                        <option name = "start_year-2008" value = "start_year-2008">2008</option>
+                        <option name = "start_year-2009" value = "start_year-2009">2009</option>
+                        <option name = "start_year-2010" value = "start_year-2010">2010</option>
+                        <option name = "start_year-2011" value = "start_year-2011">2011</option>
+                        <option name = "start_year-2012" value = "start_year-2012">2012</option>
+                        <option name = "start_year-2013" value = "start_year-2013">2013</option>
+                    </select>
+                </div>
+                <span class = "sentence" id = "loadText4"></span>
+                <div class = "menuContainerYears">
+                    <select id = "end_year_selector">
+                        <option name = "end_year-1995" value = "end_year-1995">1995</option>
+                        <option name = "end_year-1996" value = "end_year-1996">1996</option>
+                        <option name = "end_year-1997" value = "end_year-1997">1997</option>
+                        <option name = "end_year-1998" value = "end_year-1998">1998</option>
+                        <option name = "end_year-1999" value = "end_year-1999">1999</option>
+                        <option name = "end_year-2000" value = "end_year-2000">2000</option>
+                        <option name = "end_year-2001" value = "end_year-2001">2001</option>
+                        <option name = "end_year-2002" value = "end_year-2002">2002</option>
+                        <option name = "end_year-2003" value = "end_year-2003">2003</option>
+                        <option name = "end_year-2004" value = "end_year-2004">2004</option>
+                        <option name = "end_year-2005" value = "end_year-2005">2005</option>
+                        <option name = "end_year-2006" value = "end_year-2006">2006</option>
+                        <option name = "end_year-2007" value = "end_year-2007">2007</option>
+                        <option name = "end_year-2008" value = "end_year-2008">2008</option>
+                        <option name = "end_year-2009" value = "end_year-2009">2009</option>
+                        <option name = "end_year-2010" value = "end_year-2010">2010</option>
+                        <option name = "end_year-2011" value = "end_year-2011">2011</option>
+                        <option name = "end_year-2012" value = "end_year-2012">2012</option>
+                        <option name = "end_year-2013" value = "end_year-2013">2013</option>
+                        <option name = "end_year-2014" value = "end_year-2014" selected="true">2014</option>
+                    </select>
+                </div>
+            </div>
+            <div id = "filter_button">
+                <img src = "images/update-button.png" class = "update-img"/>
+            Zoom In
+            </div>
+        </div>
+
+
+        <div id = "scroll_controls">
+            <div id = "scroll_lvl1">
+                <div id = "scroll_lvl2">
+                    <div class = "scroll_menuContainer active onLoadClass" id = "scroll_topicContainer">
+                        <select id = "scroll_topics_selector">
+                            <option name = "all_topics" value = "all_topics">Each type</option>
+                            <option name = "Aggregate" value = "Aggregate">All types</option>
+                            <option name = "Arts" value = "Arts">Arts</option>
+                            <option name = "Higher-Education" value = "Higher-Education">Higher education</option>
+                            <option name = "Other-Education" value = "Other-Education">Other education</option>
+                            <option name = "Environment-and-Animals" value = "Environment-and-Animals">Environment and animals</option>
+                            <option name = "Hospitals" value = "Hospitals">Hospitals</option>
+                            <option name = "Other-Health" value = "Other-Health">Other health</option>
+                            <option name = "Human-Services" value = "Human-Services">Human services</option>
+                            <option name = "International-and-Foreign-Affairs" value = "International-and-Foreign-Affairs">International and foreign affairs</option>
+                            <option name = "Religion-Related" value = "Religion-Related">Religion related</option>
+                            <option name = "Other" value = "Other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class = "scroll_menuContainer" id = "scroll_locationContainer">
+                        <select id = "scroll_cbsa_selector" class = "scroll_locationMenu disabled">
+                            <option name = "none" value = "none" disabled="true">Select a city...</option>
+                            <option name = "all_cities" value = "all_cities" selected="true">All cities</option>
+                            <option name = "all-usa-state" value = "all-usa-state">US</option>
+                            <option name = "Atlanta-Sandy-Springs-Roswell" value = "Atlanta-Sandy-Springs-Roswell">Atlanta area, GA</option>
+                            <option name = "Austin-Round-Rock" value = "Austin-Round-Rock">Austin area, TX</option>
+                            <option name = "Baltimore-Columbia-Towson" value = "Baltimore-Columbia-Towson">Baltimore area, MD</option>
+                            <option name = "Birmingham-Hoover" value = "Birmingham-Hoover">Birmingham area, AL</option>
+                            <option name = "Boston-Cambridge-Newton" value = "Boston-Cambridge-Newton">Boston area, MA</option>
+                            <option name = "Buffalo-Cheektowaga-Niagara-Falls" value = "Buffalo-Cheektowaga-Niagara-Falls">Buffalo area, NY</option>
+                            <option name = "Charlotte-Concord-Gastonia" value = "Charlotte-Concord-Gastonia">Charlotte area, NC</option>
+                            <option name = "Chicago-Naperville-Elgin" value = "Chicago-Naperville-Elgin">Chicago area, IL</option>
+                            <option name = "Cincinnati" value = "Cincinnati">Cincinnati area, OH</option>
+                            <option name = "Cleveland-Elyria" value = "Cleveland-Elyria">Cleveland area, OH</option>
+                            <option name = "Columbus" value = "Columbus">Columbus area, OH</option>
+                            <option name = "Dallas-Fort-Worth-Arlington" value = "Dallas-Fort-Worth-Arlington">Dallas area, TX</option>
+                            <option name = "Denver-Aurora-Lakewood" value = "Denver-Aurora-Lakewood">Denver area, CO</option>
+                            <option name = "Detroit-Warren-Dearborn" value = "Detroit-Warren-Dearborn">Detroit area, MI</option>
+                            <option name = "Hartford-West-Hartford-East-Hartford" value = "Hartford-West-Hartford-East-Hartford">Hartford area, CT</option>
+                            <option name = "Houston-The-Woodlands-Sugar-Land" value = "Houston-The-Woodlands-Sugar-Land">Houston area, TX</option>
+                            <option name = "Indianapolis-Carmel-Anderson" value = "Indianapolis-Carmel-Anderson">Indianapolis area, IN</option>
+                            <option name = "Jacksonville" value = "Jacksonville">Jacksonville area, FL</option>
+                            <option name = "Kansas-City" value = "Kansas-City">Kansas City area, MO</option>
+                            <option name = "Las-Vegas-Henderson-Paradise" value = "Las-Vegas-Henderson-Paradise">Las Vegas area, NV</option>
+                            <option name = "Los-Angeles-Long-Beach-Anaheim" value = "Los-Angeles-Long-Beach-Anaheim">Los Angeles area, CA</option>
+                            <option name = "Louisville-Jefferson-County" value = "Louisville-Jefferson-County">Louisville area, KY</option>
+                            <option name = "Memphis" value = "Memphis">Memphis area, TN</option>
+                            <option name = "Miami-Fort-Lauderdale-West-Palm-Beach" value = "Miami-Fort-Lauderdale-West-Palm-Beach">Miami area, FL</option>
+                            <option name = "Milwaukee-Waukesha-West-Allis" value = "Milwaukee-Waukesha-West-Allis">Milwaukee area, WI</option>
+                            <option name = "Minneapolis-St-Paul-Bloomington" value = "Minneapolis-St-Paul-Bloomington">Minneapolis area, MN</option>
+                            <option name = "Nashville-Davidson-Murfreesboro-Franklin" value = "Nashville-Davidson-Murfreesboro-Franklin">Nashville area, TN</option>
+                            <option name = "New-Orleans-Metairie" value = "New-Orleans-Metairie">New Orleans area, LA</option>
+                            <option name = "New-York-Newark-Jersey-City" value = "New-York-Newark-Jersey-City">New York area, NY</option>
+                            <option name = "Oklahoma-City" value = "Oklahoma-City">Oklahoma City area, OK</option>
+                            <option name = "Orlando-Kissimmee-Sanford" value = "Orlando-Kissimmee-Sanford">Orlando area, FL</option>
+                            <option name = "Philadelphia-Camden-Wilmington" value = "Philadelphia-Camden-Wilmington">Philadelphia area, PA</option>
+                            <option name = "Phoenix-Mesa-Scottsdale" value = "Phoenix-Mesa-Scottsdale">Phoenix area, AZ</option>
+                            <option name = "Pittsburgh" value = "Pittsburgh">Pittsburgh area, PA</option>
+                            <option name = "Portland-Vancouver-Hillsboro" value = "Portland-Vancouver-Hillsboro">Portland area, OR</option>
+                            <option name = "Providence-Warwick" value = "Providence-Warwick">Providence area, RI</option>
+                            <option name = "Raleigh" value = "Raleigh">Raleigh area, NC</option>
+                            <option name = "Richmond" value = "Richmond">Richmond area, VA</option>
+                            <option name = "Riverside-San-Bernardino-Ontario" value = "Riverside-San-Bernardino-Ontario">Riverside area, CA</option>
+                            <option name = "Sacramento-Roseville-Arden-Arcade" value = "Sacramento-Roseville-Arden-Arcade">Sacramento area, CA</option>
+                            <option name = "Salt-Lake-City" value = "Salt-Lake-City">Salt Lake City area, UT</option>
+                            <option name = "St-Louis" value = "St-Louis">St. Louis area, MO</option>
+                            <option name = "San-Antonio-New-Braunfels" value = "San-Antonio-New-Braunfels">San Antonio area, TX</option>
+                            <option name = "San-Diego-Carlsbad" value = "San-Diego-Carlsbad">San Diego area, CA</option>
+                            <option name = "San-Francisco-Oakland-Hayward" value = "San-Francisco-Oakland-Hayward">San Francisco area, CA</option>
+                            <option name = "San-Jose-Sunnyvale-Santa-Clara" value = "San-Jose-Sunnyvale-Santa-Clara">San Jose area, CA</option>
+                            <option name = "Seattle-Tacoma-Bellevue" value = "Seattle-Tacoma-Bellevue">Seattle area, WA</option>
+                            <option name = "Tampa-St-Petersburg-Clearwater" value = "Tampa-St-Petersburg-Clearwater">Tampa area, FL</option>
+                            <option name = "Virginia-Beach-Norfolk-Newport-News" value = "Virginia-Beach-Norfolk-Newport-News">Virginia Beach area, VA</option>
+                            <option name = "Washington-Arlington-Alexandria" value = "Washington-Arlington-Alexandria">Washington area, DC</option>
+                        </select>
+                        <select id = "scroll_state_selector" class = "scroll_locationMenu enabled">
+                            <option name = "none" value = "none" disabled="true" >Select a state...</option>
+                            <option name = "all_states" value = "all_states" selected="true">All states</option>
+                            <option name = "all-usa-state" value = "all-usa-state">US</option>
+                            <option name = "AL" value = "AL">Alabama</option>
+                            <option name = "AK" value = "AK">Alaska</option>
+                            <option name = "AZ" value = "AZ">Arizona</option>
+                            <option name = "AR" value = "AR">Arkansas</option>
+                            <option name = "CA" value = "CA">California</option>
+                            <option name = "CO" value = "CO">Colorado</option>
+                            <option name = "CT" value = "CT">Connecticut</option>
+                            <option name = "DE" value = "DE">Delaware</option>
+                            <option name = "DC" value = "DC">District of Columbia</option>
+                            <option name = "FL" value = "FL">Florida</option>
+                            <option name = "GA" value = "GA">Georgia</option>
+                            <option name = "HI" value = "HI">Hawaii</option>
+                            <option name = "ID" value = "ID">Idaho</option>
+                            <option name = "IL" value = "IL">Illinois</option>
+                            <option name = "IN" value = "IN">Indiana</option>
+                            <option name = "IA" value = "IA">Iowa</option>
+                            <option name = "KS" value = "KS">Kansas</option>
+                            <option name = "KY" value = "KY">Kentucky</option>
+                            <option name = "LA" value = "LA">Louisiana</option>
+                            <option name = "ME" value = "ME">Maine</option>
+                            <option name = "MD" value = "MD">Maryland</option>
+                            <option name = "MA" value = "MA">Massachusetts</option>
+                            <option name = "MI" value = "MI">Michigan</option>
+                            <option name = "MN" value = "MN">Minnesota</option>
+                            <option name = "MS" value = "MS">Mississippi</option>
+                            <option name = "MO" value = "MO">Missouri</option>
+                            <option name = "MT" value = "MT">Montana</option>
+                            <option name = "NE" value = "NE">Nebraska</option>
+                            <option name = "NV" value = "NV">Nevada</option>
+                            <option name = "NH" value = "NH">New Hampshire</option>
+                            <option name = "NJ" value = "NJ">New Jersey</option>
+                            <option name = "NM" value = "NM">New Mexico</option>
+                            <option name = "NY" value = "NY">New York</option>
+                            <option name = "NC" value = "NC">North Carolina</option>
+                            <option name = "ND" value = "ND">North Dakota</option>
+                            <option name = "OH" value = "OH">Ohio</option>
+                            <option name = "OK" value = "OK">Oklahoma</option>
+                            <option name = "OR" value = "OR">Oregon</option>
+                            <option name = "PA" value = "PA">Pennsylvania</option>
+                            <option name = "RI" value = "RI">Rhode Island</option>
+                            <option name = "SC" value = "SC">South Carolina</option>
+                            <option name = "SD" value = "SD">South Dakota</option>
+                            <option name = "TN" value = "TN">Tennessee</option>
+                            <option name = "TX" value = "TX">Texas</option>
+                            <option name = "UT" value = "UT">Utah</option>
+                            <option name = "VT" value = "VT">Vermont</option>
+                            <option name = "VA" value = "VA">Virginia</option>
+                            <option name = "WA" value = "WA">Washington</option>
+                            <option name = "WV" value = "WV">West Virginia</option>
+                            <option name = "WI" value = "WI">Wisconsin</option>
+                            <option name = "WY" value = "WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <select id = "scroll_start_year_selector">
+                        <option name = "start_year-1994" value = "start_year-1994">1994</option>
+                        <option name = "start_year-1995" value = "start_year-1995">1995</option>
+                        <option name = "start_year-1996" value = "start_year-1996">1996</option>
+                        <option name = "start_year-1997" value = "start_year-1997">1997</option>
+                        <option name = "start_year-1998" value = "start_year-1998">1998</option>
+                        <option name = "start_year-1999" value = "start_year-1999">1999</option>
+                        <option name = "start_year-2000" value = "start_year-2000">2000</option>
+                        <option name = "start_year-2001" value = "start_year-2001">2001</option>
+                        <option name = "start_year-2002" value = "start_year-2002">2002</option>
+                        <option name = "start_year-2003" value = "start_year-2003">2003</option>
+                        <option name = "start_year-2004" value = "start_year-2004">2004</option>
+                        <option name = "start_year-2005" value = "start_year-2005" selected="true">2005</option>
+                        <option name = "start_year-2006" value = "start_year-2006">2006</option>
+                        <option name = "start_year-2007" value = "start_year-2007">2007</option>
+                        <option name = "start_year-2008" value = "start_year-2008">2008</option>
+                        <option name = "start_year-2009" value = "start_year-2009">2009</option>
+                        <option name = "start_year-2010" value = "start_year-2010">2010</option>
+                        <option name = "start_year-2011" value = "start_year-2011">2011</option>
+                        <option name = "start_year-2012" value = "start_year-2012">2012</option>
+                        <option name = "start_year-2013" value = "start_year-2013">2013</option>
+                    </select>
+                    <span id = "ndash">&ndash;</span>
+                    <select id = "scroll_end_year_selector">
+                        <option name = "end_year-1995" value = "end_year-1995" >1995</option>
+                        <option name = "end_year-1996" value = "end_year-1996">1996</option>
+                        <option name = "end_year-1997" value = "end_year-1997">1997</option>
+                        <option name = "end_year-1998" value = "end_year-1998">1998</option>
+                        <option name = "end_year-1999" value = "end_year-1999">1999</option>
+                        <option name = "end_year-2000" value = "end_year-2000">2000</option>
+                        <option name = "end_year-2001" value = "end_year-2001">2001</option>
+                        <option name = "end_year-2002" value = "end_year-2002">2002</option>
+                        <option name = "end_year-2003" value = "end_year-2003">2003</option>
+                        <option name = "end_year-2004" value = "end_year-2004">2004</option>
+                        <option name = "end_year-2005" value = "end_year-2005">2005</option>
+                        <option name = "end_year-2006" value = "end_year-2006">2006</option>
+                        <option name = "end_year-2007" value = "end_year-2007">2007</option>
+                        <option name = "end_year-2008" value = "end_year-2008">2008</option>
+                        <option name = "end_year-2009" value = "end_year-2009">2009</option>
+                        <option name = "end_year-2010" value = "end_year-2010">2010</option>
+                        <option name = "end_year-2011" value = "end_year-2011">2011</option>
+                        <option name = "end_year-2012" value = "end_year-2012">2012</option>
+                        <option name = "end_year-2013" value = "end_year-2013">2013</option>
+                        <option name = "end_year-2014" value = "end_year-2014" selected="true">2014</option>
+                    </select>
+
+                    <div id = "scroll_filter_button">
+                        <img src = "images/update-button.png" class = "update-img"/>
+                        <span>Zoom In</span>
+                    </div>
+                </div> <!-- end lvl2 -->
+            </div> <!-- end lvl1 -->
+            <div id = "jumpNarrative">Jump to narrative</div>
+        </div>
+
+        <div id ="chart">
+            <div id = "loadingGif">
+                <img src = "images/loading-gif-u.gif"/>
+                <div id = "loadingText">Almost done&#8230; thanks for your patience!</div>
+            </div>
+        </div>
+
+        <div id = "bodyCopy">
+            <p>
+            <span id = "firstLeter">I</span>n New Orleans, a nonprofit sector that grew in response to Hurricane Katrina is <a href = "http://www.urban.org/urban-wire/ten-years-after-katrina-new-orleans-nonprofits-are-still-growing">still going strong more than 10 years later</a>. That the city&#8217;s nonprofits&mdash;which are rebuilding the city, educating and providing health care to residents, and supporting jobs and housing&mdash;continue to grow financially and in number says something about New Orleans. It reflects the city&#8217;s needs, values, and people, just as the growth and decline of local nonprofits tells us something individual about every American community.
+            </p>
+
+            <p>
+            &ldquo;Nonprofits are voluntary organizations. They are an expression of our voluntary will, of the communities we want to see, of the change we want to be able to deliver,&rdquo; said <a href = "http://www.urban.org/author/shena-ashley">Shena Ashley</a>, director of the Urban Institute&#8217;s Center on Nonprofits and Philanthropy.
+            </p>
+
+            <p>
+            To look at the sector is to see a Detroit nonprofit offering job training to young adults, a homeless shelter in Durham, a Houston refugee center, an arts organization for Chicago teens, a religious hospice in South Carolina, and a prisoner reentry program in Florida, among <a href = "http://www.urban.org/research/publication/nonprofit-sector-brief-2015-public-charities-giving-and-volunteering">roughly 300,000 active, reporting public charities across the United States</a>. 
+            </p>
+
+            <p>
+            The Urban Institute analyzes changes in nonprofit organizations&#8217; gross receipts (or the funds <a href = "https://www.irs.gov/charities-non-profits/gross-receipts-defined">received</a> from all sources in a fiscal year) to track the sector&#8217;s growth and decline. In 2014, the most recent year for which we have data, <a href = "http://www.urban.org/urban-wire/which-nonprofit-sectors-were-biggest-winners-and-losers-2014">36 percent of public charities grew financially by more than 10 percent</a> over the previous year. About 28 percent saw their gross receipts decline&mdash;falling more than 10 percent from 2013 to 2014.  
+            </p>
+
+            <p>
+            When nonprofits lose revenue &ldquo;that translates often in a very real way to fewer programs, fewer offerings, fewer services for the very populations they are trying to support,&rdquo; said Urban Institute&#8217;s <a href = "http://www.urban.org/author/brice-mckeever">Brice McKeever</a>, who conducts research for the Institute&#8217;s National Center for Charitable Statistics. &ldquo;If a youth services organization doesn&#8217;t go under but stops offering afterschool programs, that&#8217;s a huge issue to the local community.&rdquo;
+            </p>
+
+            <p>
+            But the national picture can only tell us so much. The sector is diverse and local context matters, which is why our interactive tool allows you to slice the data by city, state, and nonprofit type.
+            </p>
+
+            <p>
+            What we find is that Portland, Oregon, saw the largest growth among arts organizations of any other metro area over the past five years. That immigrant organizations are growing as strongly in Minneapolis as they are in much larger metropolitan areas like New York. And that efforts to revitalize philanthropy in Miami appear to be working.  
+            </p>
+
+            <p>
+            &ldquo;This is our sector. It&#8217;s the people&#8217;s sector, and it reflects all the dynamics and change happening in our country,&rdquo; Ashley said. &ldquo;To look at them is to look at us.&rdquo;
+            </p>
+
+            <p>
+            On average, universities and hospitals tend to be the biggest and most highly resourced nonprofits by far, driving the sector&#8217;s overall growth in revenue and employment. Their size means they often dominate the policy conversation about nonprofits, but changes directed at these types of nonprofits can also have implications for the rest of the sector&mdash;something policymakers should keep in mind. Congress&#8217;s scrutiny of the <a href = "https://www.insidehighered.com/news/2016/09/14/house-panel-scrutinizes-endowments-and-college-affordability">tax-exempt status of billion-dollar university endowments</a>, for example, could affect small endowments at local child care centers. Similarly, new requirements <a href = "http://www.modernhealthcare.com/article/20160518/news/160519895">for overtime pay</a> and <a href = "http://healthaffairs.org/blog/2015/01/23/additional-requirements-for-charitable-hospitals-final-rules-on-community-health-needs-assessments-and-financial-assistance/">community needs assessments</a> may be easy for large hospitals to absorb but could be a strain on smaller hospitals and home health care providers.
+            </p>
+
+            <p>
+            Growth and decline are not the only changes we see in the nonprofit sector. Some nonprofits disappear from the data from year to year: <a href = "http://www.urban.org/sites/default/files/alfresco/publication-pdfs/412924-The-Impact-of-the-Great-Recession-on-the-Number-of-Charities.PDF">4.3 percent of reporting nonprofits disappeared from the rolls between 2004 and 2008, while a slightly higher number (5.0 percent) went missing between 2008 and 2012</a>. It&#8217;s unclear from tax forms whether those nonprofits have shuttered, have gone dormant and will later reemerge, were absorbed by a larger organization, or have shrunk to the point where they no longer need to report to the IRS.
+            </p>
+
+            <p>
+            Nonetheless, in general, the <a href = "https://rowman.com/ISBN/9781442275928/The-Nonprofit-Almanac-The-Essential-Facts-and-Figures-for-Managers-Researchers-and-Volunteers-Ninth-Edition">nonprofit sector continues to grow</a>. An estimated 14.4 million people, or over 1 in 10 employees in the United States, are employed by a nonprofit. And despite the shocks of the recent recession, the nonprofit sector grew proportionally faster than the government and business sectors from 2007 to 2010. What&#8217;s more, the nonprofit sector makes up 5.4 percent of our gross domestic product, meaning that it has an increasingly large impact on our national economy, as well as our local communities.
+            </p>
+
+            <p>
+            Ashley encourages people to use the tool and take a closer look at the nonprofit sector in their cities and communities. Are certain areas underserved while nonprofits compete for clients in others? If we see growth in certain types of nonprofits, what does that say about how our communities are changing and aiming to shape their own futures?
+            </p>
+
+            <p>
+            &ldquo;All of us should care about growth, and not just that [the sector] is growing, but how is it growing and is the direction of that growth consistent with our values,&rdquo; Ashley said. &ldquo;The sector belongs to your community.&rdquo;
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="content">     
+
+            <div id="left">
+                <h4>About the data</h4>
+                <p><em>To learn more about the nonprofit sector, please visit <a href = "http://www.urban.org/features/nonprofit-almanac-and-almanac-briefs">The Nonprofit Almanac</a> on our website.</em></p>
+
+                <p>All analyses reflect Urban Institute analysis of fiscal year (FY) 1994&ndash;2014 IRS Form 990 data. Results and figures reflect Urban Institute analysis of the National Center for Charitable Statistics PC Fiscal Year Trend File (1998&ndash;2013) and the IRS Business Master File (December 2015). Findings are based on changes in gross receipts for a given public charity from one fiscal year to the next. Results reflect only active, reporting public charities. The nonprofit sector includes public charities and private foundations, both classified as 501(c)(3) tax-exempt organizations, as well as other 501(c) organizations granted tax-exempt status. Almost 1 million of the 1.41 million registered nonprofits in the United States—and almost 300,000 of the 500,000 actively reporting nonprofits—are public charities.</p>
+                <p>
+                 Results include only public charity organizations filing for <em>both</em> years within a given two-year period; therefore, public charities filing in only one of the given years are excluded from the sample. Religious congregations and other organizations not required to file Form 990s are excluded from analysis. Organizations are classified by type according to their National Taxonomy of Exempt Entities code. City area location information is based on the US Census Bureau’s <a href = "https://www.census.gov/population/metro/data/def.html">delineations of core based statistical areas</a> (for February 2013, the period with the most overlap for the years given in the analysis) for the 50 largest core based statistical areas (by <a href = "https://www.census.gov/popest/data/metro/totals/2013/files/CBSA-EST2013-alldata.csv">2013 population size</a>, consistent with the methodology presented in <em>The Nonprofit Almanac: Ninth Edition</em>).</p>
+
+                </div>
+            <div id="right">
+
+                <h4>Project credits</h4>
+
+                <div class="urbanstatement">As an organization, the Urban Institute does not take positions on issues, but it does empower and support its experts in sharing their own evidence-based views and policy recommendations that have been shaped by scholarship.</div>
+
+                <h3 class="job">Research</h3>
+                <a href="http://www.urban.org/author/brice-mckeever">Brice McKeever</a>, <a href="http://www.urban.org/author/shena-ashley">Shena Ashley</a>, and <a href="http://www.urban.org/author/nathan-dietz">Nathan Dietz</a>
+
+                <h3 class="job">Development</h3>
+                <a href="http://www.urban.org/author/benjamin-chartoff">Ben Chartoff</a>
+
+                <h3 class="job">Writing</h3>
+                <a href="http://www.urban.org/author/serena-lei">Serena Lei</a>
+
+                <h3 class="job">Design</h3>
+                <a href="http://www.urban.org/author/christina-baird">Christina Baird</a>
+
+                <h3 class="job">Editorial</h3>
+                <a href="http://www.urban.org/author/fiona-blackshaw">Fiona Blackshaw</a>
+
+                <div class="credits">Copyright &copy; <a href="http://www.urban.org/">Urban Institute</a> November 2016. <a href="https://github.com/UrbanInstitute/nonprofit-gains-and-losses" target="_blank">View this project on Github.</a></div>
+                </div>
+
+            </div> 
+        </footer>
+
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/d3.v4.0.0-rc.2.js"></script>
+        <script src='js/vendor/jquery.min.js'></script>
+        <script src="js/vendor/jquery-ui.js"></script>
+        <script src="data/ntees.js"></script>
+        <script src="data/states.js"></script>
+        <script src="data/stateData.js"></script>
+        <script src="data/cbsas.js"></script>
+        <script src="js/nonprofit.js"></script>
+        <script src="js/header.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () { 
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),  m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m) 
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); 
+            ga('create', 'UA-57529944-1', 'auto'); 
+            ga('send', 'pageview');
+        </script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="urban.org"></span>
+</div>
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+    </body>
+</html>
