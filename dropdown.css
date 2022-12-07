@@ -666,7 +666,6 @@ button.ui-button::-moz-focus-inner {
 .ui-selectable-helper {
 	position: absolute;
 	z-index: 100;
-	border: 4px dotted black;
 }
 .ui-selectmenu-menu {
 	padding: 0;
@@ -872,25 +871,25 @@ body .ui-tooltip {
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: "Roboto";
+	font-family: 'Roboto Condensed';
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 100;
 }
 .ui-widget .ui-widget {
-	font-family: "Roboto";
+	font-family: 'Roboto Condensed';
 	font-size: 43px;
-	font-weight: 300;
+	font-weight: 100;
 }
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-	font-family: "Roboto";
+	font-family: 'Roboto Condensed';
 	font-size: 43px;
-	font-weight: 300;
+	font-weight: 100;
 }
 .ui-widget.ui-widget-content {
-	border-bottom: 4px dotted #070707;
+	border-bottom: 1px dotted #070707;
 }
 .ui-widget-content {
 	border-bottom: 4px solid #dddddd;
@@ -922,7 +921,6 @@ works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
 	border-bottom: 4px dotted #000000;
-	background: #;
 	font-weight: bold;
 	color: #454545;
 }
@@ -971,7 +969,7 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 4px solid #;
+	border: 4px solid;
 	background: #454545;
 	font-weight: normal;
 	color: #ffffff;
