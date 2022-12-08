@@ -25,34 +25,208 @@
     <div class="body">
         <div class="header">
             <div class="container">
-                <img src="./Images/header_v2_mobile.svg" width="auto" height="auto">
+                <img src="./Images/header_12_8_22.svg" width="700" height="auto">
                 <h1> <span class="highlight2-container"><span class="highlight2">Pro-life</span></span>
                     or <span class="highlight-container"><span class="highlight">pro-strife</span></span>?</h1>
 
-                <h3>Pro-life states with strict abortion laws are spending less money to support families and children.
+                <h2>Pro-life states with strict abortion laws are spending less money to support families and children,
+                    making them some of the hardest places to raise a family.
                     <br>
                     <br>
-                    The Supreme Court overturned Roe v. Wade in June 2022, giving states the power to decide whether a
-                    woman can
-                    access an abortion. Now, <strong>states with some of the nation’s strictest abortion laws are also
-                        some of the
-                        hardest places to raise a healthy child.</strong> </h3>
+                </h2>
                 <br>
                 <hr width="50%">
                 <img src="./Images/Down-Arrow.png" width="20x">
                 <br>
-            </div>
 
-            <div class="imageContainer">
-                <h2>28 states curently ban or seriously restrict access to abortion. </h2>
-                <div class="image">
-                    <img src="./Images/HighResFilesForScroll2-01.svg" width="100%" height="auto"></div>
-                <div>
-                    <p>In <span class="proLife">pro-life</span> sates abortion access is not protected or it is severely
-                        restricted. <br> In <span class="proChoice">pro-choice</span> states abortion access is
-                        protected or has
-                        been
-                        expanded </p>
+
+                <div class="imageContainer">
+                    <h2>After the Supreme Court overturned Roe v. Wade, 28 states banned or restricted access to
+                        abortion.
+                    </h2>
+                    <div class="image">
+                        <img src="./Images/us_map_legend_abortion.svg" width="100%" height="auto"></div>
+                    <div>
+
+                    </div>
+
+                    <div class="container">
+                        <br>
+                        <hr width="50%">
+                        <img src="./Images/Down-Arrow.png" width="20x">
+                        <br>
+                    </div>
+
+                    <div>
+
+                        <div id="controls">
+                            <h2>Where do you live? See how your state compares below. </h2>
+                            <div id="sentence">
+                                <span class="sentence">
+                                    I live in
+                                    <span id="hide-np">State</span>
+                                </span>
+                                <div class="menuContainer active onLoadClass" id="topicContainer">
+                                    <select id="stateMenu" style="display: none" ;>
+                                        <option value="">State</option>
+                                        <option value="Alabama">Alabama</option>
+                                        <option value="Alaska">Alaska</option>
+                                        <option value="Arizona">Arizona</option>
+                                        <option value="Arkansas">Arkansas</option>
+                                        <option value="California">California</option>
+                                        <option value="Colorado">Colorado</option>
+                                        <option value="Connecticut">Connecticut</option>
+                                        <option value="Delaware">Delaware</option>
+                                        <option value="District of Columbia">The District of Columbia</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Hawaii">Hawaii</option>
+                                        <option value="Idaho">Idaho</option>
+                                        <option value="Illinois">Illinois</option>
+                                        <option value="Indiana">Indiana</option>
+                                        <option value="Iowa">Iowa</option>
+                                        <option value="Kansas">Kansas</option>
+                                        <option value="Kentucky">Kentucky</option>
+                                        <option value="Louisiana">Louisiana</option>
+                                        <option value="Maine">Maine</option>
+                                        <option value="Maryland">Maryland</option>
+                                        <option value="Massachusetts">Massachusetts</option>
+                                        <option value="Michigan">Michigan</option>
+                                        <option value="Minnesota">Minnesota</option>
+                                        <option value="Mississippi">Mississippi</option>
+                                        <option value="Missouri">Missouri</option>
+                                        <option value="Montana">Montana</option>
+                                        <option value="Nebraska">Nebraska</option>
+                                        <option value="Nevada">Nevada</option>
+                                        <option value="New Hampshire">New Hampshire</option>
+                                        <option value="New Jersey">New Jersey</option>
+                                        <option value="New Mexico">New Mexico</option>
+                                        <option value="New York">New York</option>
+                                        <option value="North Carolina">North Carolina</option>
+                                        <option value="North Dakota">North Dakota</option>
+                                        <option value="Ohio">Ohio</option>
+                                        <option value="Oklahoma">Oklahoma</option>
+                                        <option value="Oregon">Oregon</option>
+                                        <option value="Indiana">Indiana</option>
+                                        <option value="Iowa">Iowa</option>
+                                        <option value="Pennsylvania">Pennsylvania</option>
+                                        <option value="Rhode Island">Rhode Island</option>
+                                        <option value="South Carolina">South Carolina</option>
+                                        <option value="South Dakota">South Dakota</option>
+                                        <option value="Tennessee">Tennessee</option>
+                                        <option value="Texas">Texas</option>
+                                        <option value="Utah">Utah</option>
+                                        <option value="Vermont">Vermont</option>
+                                        <option value="Virginia">Virginia</option>
+                                        <option value="Washington">Washington</option>
+                                        <option value="West Virginia">West Virginia</option>
+                                        <option value="Wisconsin">Wisconsin</option>
+                                        <option value="Wyoming">Wyoming</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <span class="sentence">
+                                    <span id="statename1">My state</span> ranks <span id="categoryRank">#</span> in
+                                    spending
+                                    on
+                                </span>
+                                <div class="menuContainer active onLoadClass" id="categoryContainer">
+                                    <select id="categoryMenu" style="display:none" ;>
+                                        <option value="">Category </option>
+                                        <option value="total">Total Spending</option>
+                                        <option value="health">Health + Nutrition</option>
+                                        <option value="financial">Financial Support</option>
+                                        <option value="housing">Housing</option>
+                                        <option value="education">Education</option>
+                                        <option value="resources">Financial Resources</option>
+                                    </select>
+                                    <br>
+                                    <span class="sentence">
+                                        Abortion access in <span id="statename2">My State</span> is <span
+                                            id="abortionRank">status</span>.
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <br>
+                            <hr width="50%">
+                            <img src="./Images/Down-Arrow.png" width="20x">
+                            <br>
+                        </div>
+
+
+                        <div class="flourish-embed" data-src="story/1770447">
+                            <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        </div>
+                        <p class="invisible"><a href="#story/1770447/slide-1"></a></p>
+                        <p class="invisible"><a href="#story/1770447/slide-2"></a></p>
+
+
+                    </div>
+
+                    <div class="container">
+                        <br>
+                        <hr width="50%">
+                        <img src="./Images/Down-Arrow.png" width="20x">
+                        <br>
+                    </div>
+
+                    <!-- <div id="my-wrapper">
+                            <div class="headlines.life">
+                                <h2 class="life">“Our state’s historic case before the United States Supreme Court was
+                                    the
+                                    catalyst for
+                                    overturning Roe v.
+                                    Wade and has made the nation safer for children than it was just a few short hours
+                                    ago."
+                                    <h4>Mississippi Governor</h4>
+                            </div>
+
+                            <h4>Carrying an unwanted pregnancy <span style="font-weight:bold;"> quadruples the odds
+                                </span>
+                                that a woman
+                                and
+                                her child will live below the federal poverty line, according to The Turnaway Study, a
+                                University of
+                                California
+                                San Francisco research project that tracked women who got access to abortions versus
+                                those
+                                who’d been
+                                denied
+                                them over a 10-year period. It triples the chances of the woman being unemployed.
+                            </h4> -->
+                    <br><br>
+
+                    <h4 class="directions">Scroll through the interactive visuals to compare pro-choice and pro-life
+                        states.</h4>
+                    <!--  <div class="container">
+                <br>
+                <hr width="50%">
+                <img src="./Images/Down-Arrow.png" width="20x">
+                <br>
+            </div> -->
+
+
+
+
+
+                    <div class="flourish-embed" data-src="story/1770472">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div>
+                    <p class="invisible"><a href="#story/1770472/slide-1"></a></p>
+                    <p class="invisible"><a href="#story/1770472/slide-2"></a></p>
+                    <p>The red cluster represents <span class="proLife">pro-life</span> states. They spend less
+                        on
+                        children,and have higher poverty rates.<a href="#story/1770472/slide-3"></a></p>
+                    <p>While the blue cluster represents <span class="proChoice">pro-choice</span> states that
+                        spend
+                        more on
+                        children
+                        with lower poverty rates<a href="#story/1770472/slide-4"></a></p>
+
+
                 </div>
 
                 <div class="container">
@@ -62,264 +236,157 @@
                     <br>
                 </div>
 
+
+                <div class="flourish-embed flourish-map" data-src="visualisation/11864887" width="80%">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+
+                <h2>Where does state spending for families go?</h2>
+
                 <div>
-
-                    <h2><strong>Where do you live?</strong> Select your state below to see how it ranks in spending on
-                        children
-                        and access to abortion. Do you see a connection? </h2>
-                </div>
-            </div>
-
-            <div id="controls">
-                <div id="sentence">
-                    <span class="sentence">
-                        <strong>I live in</strong>
-                        <span id="hide-np">State</span>
-                    </span>
-                    <div class="menuContainer active onLoadClass" id="topicContainer">
-                        <select id="stateMenu" style="display: none" ;>
-                            <option value="">State</option>
-                            <option value="Alabama">Alabama</option>
-                            <option value="Alaska">Alaska</option>
-                            <option value="Arizona">Arizona</option>
-                            <option value="Arkansas">Arkansas</option>
-                            <option value="California">California</option>
-                            <option value="Colorado">Colorado</option>
-                            <option value="Connecticut">Connecticut</option>
-                            <option value="Delaware">Delaware</option>
-                            <option value="District of Columbia">The District of Columbia</option>
-                            <option value="Florida">Florida</option>
-                            <option value="Georgia">Georgia</option>
-                            <option value="Hawaii">Hawaii</option>
-                            <option value="Idaho">Idaho</option>
-                            <option value="Illinois">Illinois</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Iowa">Iowa</option>
-                            <option value="Kansas">Kansas</option>
-                            <option value="Kentucky">Kentucky</option>
-                            <option value="Louisiana">Louisiana</option>
-                            <option value="Maine">Maine</option>
-                            <option value="Maryland">Maryland</option>
-                            <option value="Massachusetts">Massachusetts</option>
-                            <option value="Michigan">Michigan</option>
-                            <option value="Minnesota">Minnesota</option>
-                            <option value="Mississippi">Mississippi</option>
-                            <option value="Missouri">Missouri</option>
-                            <option value="Montana">Montana</option>
-                            <option value="Nebraska">Nebraska</option>
-                            <option value="Nevada">Nevada</option>
-                            <option value="New Hampshire">New Hampshire</option>
-                            <option value="New Jersey">New Jersey</option>
-                            <option value="New Mexico">New Mexico</option>
-                            <option value="New York">New York</option>
-                            <option value="North Carolina">North Carolina</option>
-                            <option value="North Dakota">North Dakota</option>
-                            <option value="Ohio">Ohio</option>
-                            <option value="Oklahoma">Oklahoma</option>
-                            <option value="Oregon">Oregon</option>
-                            <option value="Indiana">Indiana</option>
-                            <option value="Iowa">Iowa</option>
-                            <option value="Pennsylvania">Pennsylvania</option>
-                            <option value="Rhode Island">Rhode Island</option>
-                            <option value="South Carolina">South Carolina</option>
-                            <option value="South Dakota">South Dakota</option>
-                            <option value="Tennessee">Tennessee</option>
-                            <option value="Texas">Texas</option>
-                            <option value="Utah">Utah</option>
-                            <option value="Vermont">Vermont</option>
-                            <option value="Virginia">Virginia</option>
-                            <option value="Washington">Washington</option>
-                            <option value="West Virginia">West Virginia</option>
-                            <option value="Wisconsin">Wisconsin</option>
-                            <option value="Wyoming">Wyoming</option>
-                        </select>
-                    </div>
-                    <span class="sentence">
-                        <span id="statename1">My state</span> ranks <span id="categoryRank">#</span> in spending on
-                    </span>
-                    <div class="menuContainer active onLoadClass" id="categoryContainer">
-                        <select id="categoryMenu" style="display:none" ;>
-                            <option value="">Category </option>
-                            <option value="total">Total Spending</option>
-                            <option value="health">Health + Nutrition</option>
-                            <option value="financial">Financial Support</option>
-                            <option value="housing">Housing</option>
-                            <option value="education">Education</option>
-                            <option value="resources">Financial Resources</option>
-                        </select>
-
-                        <span class="sentence">
-                            <strong>Abortion access</strong> in <span id="statename2">My State</span> is <span
-                                id="abortionRank">status</span>.
-                        </span>
-
+                    <div class="row">
+                        <div class="column">
+                            <div style='display: flex; justify-content: center;' class="rollover1">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div style='display: flex; justify-content: center;' class="rollover2">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div style='display: flex; justify-content: center;' class="rollover3">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div style='display: flex; justify-content: center;' class="rollover4">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div style='display: flex; justify-content: center;' class="rollover5">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="container">
-            <br>
-            <hr width="50%">
-            <img src="./Images/Down-Arrow.png" width="20x">
-            <br>
-        </div>
+                <div class="container">
+                    <br>
+                    <hr width="50%">
+                    <img src="./Images/Down-Arrow.png" width="20x">
+                    <br>
+                </div>
 
+                <h2>How do pro-life and pro-choice states stack up in spending by category?</h2>
 
+                <div class="flourish-embed" data-src="story/1769151" width="80%">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+                <p>There is a 26% decrease in spending on education in <span class="proLife">pro-life
+                        states.</span><a href="#story/1769151/slide-1"></a></p>
 
-        <div id="my-wrapper">
-            <div class="headlines.life">
-                <h2>“Our state’s historic case before the United States Supreme Court was the catalyst for overturning
-                    Roe v.
-                    Wade and has made the nation safer for children than it was just a few short hours ago." --
-                    Mississippi
-                    Governor </h2>
-            </div>
+                <p><span class="proLife">Pro-life</span> states spend 23% less on direct payments to families
+                    than
+                    <span class="proChoice">pro-choice</span> states<a href="#story/1769151/slide-2"></a></p>
 
-            <h4>Carrying an unwanted pregnancy <span style="font-weight:bold;"> quadruples the odds </span> that a woman
-                and
-                her child will live below the federal poverty line, according to The Turnaway Study, a University of
-                California
-                San Francisco research project that tracked women who got access to abortions versus those who’d been
-                denied
-                them over a 10-year period. It triples the chances of the woman being unemployed.
-            </h4>
-            <img src="./Images/children_1_7_poverty.png" width="350px"><br><br>
+                <p><span class="proLife">Pro-life</span> states spend on average, 16% less than <span
+                        class="proChoice">pro-choice</span> states on health and nutrition services.<a
+                        href="#story/1769151/slide-3"></a></p>
 
-            <div class="container">
+                <p><span class="proLife">Pro-life</span> states spend on average, $200 less than <span
+                        class="proChoice">pro-choice</span> states on public resources such as libraries and
+                    parks.<a href="#story/1769151/slide-4"></a></p>
+
+                <p>Housing is by far the category with the biggest difference, with <span
+                        class="proLife">pro-life</span> states
+                    spending 61% less than <span class="proChoice">pro-choice</span> states .<a
+                        href="#story/1769151/slide-5"></a></p>
+
                 <br>
-                <hr width="50%">
-                <img src="./Images/Down-Arrow.png" width="20x">
+
+                <div class="flourish-embed" data-src="story/1770479">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+
+                <div class="container">
+                    <br>
+                    <hr width="50%">
+                    <img src="./Images/Down-Arrow.png" width="20x">
+                    <br>
+                </div>
+
+                <div class="flourish-embed" data-src="story/1762540">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+                <!-- Here is where you add your captions, linking them to specific slides in the story -->
+                <p>The reproductive rights index score include factors such as public insurance coverage, high
+                    quality sex
+                    education in schools, and access to infertility treatments. <a href="#story/1762540/slide-1"></a>
+                </p>
+
+                <p>Several <span class="proLife">Pro-life</span> states have banned abortion or significantly
+                    weakened abortion
+                    access. <br> These same pro-life states have the weakest maternal and child health outcomes,
+                    and
+                    they spend
+                    significantly less money than <span class="proChoice">pro-choice</span> states taking care
+                    of
+                    families<a href="#story/1762540/slide-1"></a></p>
+
+
+                <div class="container">
+                    <br>
+                    <hr width="50%">
+                    <img src="./Images/Down-Arrow.png" width="20x">
+                    <br>
+                </div>
+
+
+                <br><br><br>
+
+                <h4>Scroll to see how state rankings match up against all spending categories. Darker colored
+                    indicate higher
+                    ranks.
+                    States are ordered by reproductive rights scores.</h4>
+
+                <div class="background">
+                    <div class="flourish-embed flourish-heatmap" data-src="visualisation/12012702" width="80%">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div>
+                </div>
+                <div class="container">
+                    <br>
+                    <hr width="50%">
+                    <img src="./Images/Down-Arrow.png" width="20x">
+                    <br>
+                </div>
+
+                <h2>"One upside of Dobbs is that it makes possible broad coalitions of people of goodwill who,
+                    despite their
+                    disagreement on the fundamental question of abortion, agree that we must all work to provide
+                    for
+                    the needs
+                    of mothers, children and families in crisis."</h2>
+                <h4>Washington Post opinion page</h4>
                 <br>
-            </div>
 
-            <h2>Child poverty rates are higher in states that restrict abortion access.</h2>
-            <h4>Keep scrolling to learn more. Click on your state at any time for the specific data. </h4>
 
-            <div class="container">
-                <br><br>
-                <hr width="50%">
-                <img src="./Images/Down-Arrow.png" width="20x">
+
+
                 <br>
+                <div class="text">
+                    <h3><strong>About</strong></h3>
+                    <h4>This was a graduate project </h4>
+
+
+                </div>
+
+                <h2>Social Share</h2>
+
+                </span>
+
             </div>
-            <div class="flourish-embed" data-src="story/1766936" width="80%">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-            </div>
-            <p class="invisible"><a href="#story/1766936/slide-1"></a></p>
-            <p class="invisible"><a href="#story/1766936/slide-2"></a></p>
-            <p>The red cluster represents <span class="proLife">pro-life</span> states that spend less on
-                children,*and?* yet
-                have higher poverty rates.<a href="#story/1766936/slide-3"></a></p>
-            <p>While the blue cluster represents <span class="proChoice">pro-choice</span> states that spend more on
-                children
-                with lower poverty rates<a href="#story/1766936/slide-4"></a></p>
 
-            <p>The District of Columbia looks to be an outlier, spending the most per child at almost $64k<a
-                    href="#story/1766936/slide-5"></a></p>
+
         </div>
-
-        <div class="container">
-            <br>
-            <hr width="50%">
-            <img src="./Images/Down-Arrow.png" width="20x">
-            <br>
-        </div>
-
-        <h2>States that limit abortion access spend 20% less on children than pro-choice states.</h2>
-        <div class="flourish-embed flourish-map" data-src="visualisation/11864887" width="80%">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-
-        <h2>Where does state spending for families go? How states spend their budgets also differs. For our evaluation
-            we
-            broke the data into 5 buckets.</h2>
-
-        <div style='display: flex; justify-content: center;' class="rollover">
-        </div>
-
-        <img src="./Images/spending_categories.png" width=100% height="100%">
-        <div class="flourish-embed" data-src="story/1769151" width="80%">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-        <p>There is a 26% decrease in spending on education in <span class="proLife">pro-life states.</span><a
-                href="#story/1769151/slide-1"></a></p>
-
-        <p><span class="proLife">Pro-life</span> states spend 23% less on financial payments to families than <span
-                class="proChoice">pro-choice</span> states<a href="#story/1769151/slide-2"></a></p>
-
-        <p><span class="proLife">Pro-life</span> states spend on average, 16% less than <span
-                class="proChoice">pro-choice</span> states on health and nutrition services.<a
-                href="#story/1769151/slide-3"></a></p>
-
-        <p><span class="proLife">Pro-life</span> states spend on average, $200 less than <span
-                class="proChoice">pro-choice</span> states on public resources such as libraries and parks.<a
-                href="#story/1769151/slide-4"></a></p>
-
-        <p>Housing is by far the category with the biggest difference, with <span class="proLife">pro-life</span> states
-            spending 61% less than <span class="proChoice">pro-choice</span> states .<a
-                href="#story/1769151/slide-5"></a></p>
-
-        <h2>We need to look more broadly at the relationship between reproductive rights and spending.</h2>
-
-        <h4>The Institute for Women’s Policy Research developed a comprehensive reproductive rights index score weighted
-            across eight key indicators. These include factors such as public insurance coverage, high quality sex
-            education
-            in schools, and access to infertility treatments. What is the relationship between the reproductive rights
-            score
-            of the state and financial support of chidlren and families? </h4>
-
-        <div class="flourish-embed" data-src="story/1762540">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-        <!-- Here is where you add your captions, linking them to specific slides in the story -->
-        <p>What to say about this <a href="#story/1762540/slide-1"></a></p>
-
-        <p>Several <span class="proLife">Pro-life</span> states have banned abortion or significantly weakened abortion
-            access. <br> These same pro-life states have the weakest maternal and child health outcomes, and they spend
-            significantly less money than <span class="proChoice">pro-choice</span> states taking care of families<a
-                href="#story/1762540/slide-1"></a></p>
-
-
-
-
-
-        <br><br><br>
-        <h2>As access to reproductive rights fall, so does state financial support for families and chidren.</h2>
-        <h4>Scroll to see how state rankings match up against all spending categories. Darker colored indicate higher
-            ranks.
-            States are ordered by reproductive rights scores.</h4>
-
-        <div class="background">
-            <div class="flourish-embed flourish-heatmap" data-src="visualisation/12012702" width="80%">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-            </div>
-        </div>
-
-        <h2>"One upside of Dobbs is that it makes possible broad coalitions of people of goodwill who, despite their
-            disagreement on the fundamental question of abortion, agree that we must all work to provide for the needs
-            of
-            mothers, children and families in crisis."</h2>
-        <br>
-        <div class="text">
-            <h3><strong>So, what can you do next?</strong>
-                <ul>
-                    <li>Share this story with others</li>
-                    <li> Get involved. Support planned parenthood</li>
-                    <li>Advocate for changes to your state budget</li>
-                </ul>
-            </h3>
-        </div>
-        <br>
-        <h2>Social Share</h2>
-
-        <div class="text">
-            <h3><strong>Methodology</strong></h3>
-            <h4>Here is where we put our how </h4>
-            <h3><strong>Notes</strong></h3>
-            <h4>Here is where we put any caveats </h4>
-            <h3><strong>Sources and Thanks</strong></h3>
-            <h4>Here is where we put links, project description? What else could be useful? </h4>
-
 </body>
 
 
@@ -377,25 +444,39 @@
     }
 
     p {
-        font-family: 'Roboto';
+        font-family: 'Roboto Condensed';
         font-size: 14px;
         line-height: 1.8em;
     }
 
     h1 {
-        font-family: 'Roboto Slab';
-        font-size: 60px;
-        font-weight: 100;
+        font-family: 'Roboto Condensed';
+        font-size: 68px;
+        text-align: center;
+        font-weight: 400;
         padding: 10 10 10 10;
         line-height: 1.45em;
     }
 
     h2 {
-        font-family: 'Roboto Slab';
-        font-size: 25px;
+        font-family: 'Roboto Condensed';
+        font-size: 20px;
         line-height: 1.4em;
         font-weight: 300;
-        text-align: center;
+        padding-left: 10;
+        text-align: left;
+        background-color: #ffffff;
+        color: #a5a5a0;
+
+
+    }
+
+    h2.life {
+        font-family: 'Roboto Condensed';
+        font-size: 20px;
+        line-height: 1.4em;
+        font-weight: 200;
+        text-align: left;
         background-color: #ffffff;
         color: #990612;
 
@@ -403,24 +484,31 @@
     }
 
     h3 {
-        font-family: 'Roboto';
+        font-family: 'Roboto Condensed';
         font-size: 18px;
-        font-weight: 400;
-        padding-left: 10;
-        margin: auto;
+        font-weight: 300;
+        padding-left: 10px;
+        margin-top: -50px;
         font-weight: 100;
         line-height: 1.55em;
         text-align: left;
     }
 
     h4 {
-        font-family: 'Roboto';
-        font-size: 16px;
+        font-family: 'Roboto Condensed';
+        font-size: 14px;
         font-weight: 200;
         line-height: 1.45em;
         padding-top: 10px;
+        padding-left: 10;
         margin-left: 20px;
         margin-right: 0px
+    }
+
+    h4.directions {
+        font-style: italic;
+        text-align: center;
+        padding-top: -40px;
     }
 
 
@@ -539,19 +627,79 @@
         opacity: 0 !important;
     }
 
-    .rollover {
+    .rollover1 {
         display: block;
-        width: 436px;
-        height: 730px;
-        background: url("./Images/direct_rollover-03-small.png") no-repeat;
+        width: 262px;
+        height: 302px;
+        background: url("./Images/education_front_small.png") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
         transition: all .7s ease-in-out;
     }
 
-    .rollover:hover {
-        background: url(./Images/direct_rollover-04-small.png)
+    .rollover1:hover {
+        background: url(./Images/education_back_small.png)
+    }
+
+    .rollover2 {
+        display: block;
+        width: 262px;
+        height: 302px;
+        background: url("./Images/payments_front_small.png") no-repeat;
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+    }
+
+    .rollover2:hover {
+        background: url(./Images/payments_back_small.png)
+    }
+
+    .rollover3 {
+        display: block;
+        width: 262px;
+        height: 302px;
+        background: url("./Images/health_front_small.png") no-repeat;
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+    }
+
+    .rollover3:hover {
+        background: url(./Images/health_back_small.png)
+    }
+
+    .rollover4 {
+        display: block;
+        width: 262px;
+        height: 302px;
+        background: url("./Images/public_front_small.png") no-repeat;
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+    }
+
+    .rollover4:hover {
+        background: url(./Images/public_back_small.png)
+    }
+
+    .rollover5 {
+        display: block;
+        width: 262px;
+        height: 302px;
+        background: url("./Images/housing_front_small.png") no-repeat;
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+    }
+
+    .rollover5:hover {
+        background: url(./Images/housing_back_small.png)
     }
 
     #controls {
@@ -560,17 +708,17 @@
 
     #sentence {
         font-family: 'Roboto Condensed', sans-serif;
-        top: 160px;
+        top: 60px;
         position: relative;
         margin: 0 auto;
         width: 80%;
         text-align: center;
         line-height: 68px;
-        margin-bottom: 160px;
+        margin-bottom: 80px;
     }
 
     span.sentence {
-        font-size: 43px;
+        font-size: 30px;
         font-weight: 100;
     }
 
@@ -715,6 +863,20 @@
     .locationMenu.disabled {
         opacity: .3;
     }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: auto;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 </style>
 
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -774,6 +936,8 @@
             if (ui.item.value !== '') {
                 document.getElementById('statename1').innerText = ui.item.value;
                 document.getElementById('statename2').innerText = ui.item.value;
+                document.getElementById('statename3').innerText = ui.item.value;
+
             } else {
                 document.getElementById('statename1').innerText = 'My state';
                 document.getElementById('statename2').innerText = 'My state';
