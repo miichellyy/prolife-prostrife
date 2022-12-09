@@ -1,0 +1,52 @@
+State,reproductiveRank,educationRank,financialRank,healthRank,housingRank,resourcesRank,totalRank,abortionRank
+Alabama,40,40,36,19,38,47,31,Illegal
+Alaska,24,5,13,11,3,16,5,Protected
+Arizona,45,50,24,35,46,36,44,Hostile
+Arkansas,48,30,34,20,48,46,28,Illegal
+California,2,16,11,8,13,14,9,Expanded Access
+Colorado,28,37,38,40,20,3,42,Protected
+Connecticut,5,7,17,23,6,28,7,Expanded Access
+Delaware,19,13,22,12,15,35,13,Protected
+District of Columbia,17,1,1,1,1,1,1,Protected
+Florida,22,42,39,37,24,13,41,Protected
+Georgia,29,39,47,46,33,50,48,Hostile
+Hawaii,11,41,21,22,14,10,27,Protected
+Idaho,50,51,45,47,43,43,50,Illegal
+Illinois,13,20,23,44,22,4,34,Expanded Access
+Indiana,42,46,26,29,26,31,38,Hostile
+Iowa,39,25,43,14,49,24,23,Hostile
+Kansas,30,31,44,36,39,29,37,Protected
+Kentucky,33,32,25,10,32,44,22,Illegal
+Louisiana,43,33,37,27,21,17,29,Illegal
+Maine,7,14,3,25,7,38,11,Protected
+Maryland,8,19,20,38,8,6,25,Protected
+Massachusetts,16,9,12,6,2,37,6,Protected
+Michigan,34,26,28,28,27,39,30,Hostile
+Minnesota,15,23,14,18,17,7,17,Expanded Access
+Mississippi,35,34,31,7,40,49,20,Illegal
+Missouri,51,43,50,30,31,22,40,Illegal
+Montana,14,27,49,33,44,41,36,Protected
+Nebraska,49,15,27,49,36,33,39,Hostile
+Nevada,18,45,33,45,34,8,47,Protected
+New Hampshire,20,11,48,42,10,30,32,Not Protected
+New Jersey,1,6,16,34,18,34,15,Expanded Access
+New Mexico,10,24,29,4,45,19,14,Not Protected
+New York,6,3,5,2,9,15,2,Expanded Access
+North Carolina,21,36,42,24,23,42,33,Hostile
+North Dakota,46,10,2,48,25,2,18,Hostile
+Ohio,38,29,19,17,11,27,21,Hostile
+Oklahoma,37,47,30,41,37,40,45,Illegal
+Oregon,4,21,6,13,16,9,10,Expanded Access
+Pennsylvania,25,12,9,16,19,48,12,Hostile
+Rhode Island,12,8,15,21,4,21,8,Protected
+South Carolina,32,35,41,9,35,26,24,Hostile
+South Dakota,47,44,40,51,30,12,49,Illegal
+Tennessee,31,48,35,32,28,45,43,Illegal
+Texas,26,38,46,43,47,51,46,Illegal
+Utah,41,49,51,50,42,32,51,Hostile
+Vermont,9,4,4,5,5,25,3,Expanded Access
+Virginia,23,28,32,39,29,20,35,Not Protected
+Washington,3,22,7,26,12,11,19,Expanded Access
+West Virginia,44,17,8,15,41,23,16,Illegal
+Wisconsin,27,18,18,31,50,18,26,Hostile
+Wyoming,36,2,10,3,51,5,4,Hostile
