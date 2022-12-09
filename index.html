@@ -136,9 +136,9 @@
                                         <option value="Wyoming">Wyoming</option>
                                     </select>
                                 </div>
-
+<br>
                                 <span class="sentence">
-                                    <span id="statename1">My state</span> ranks <span id="categoryRank">#</span> in
+                                    <span id="statename1" class="statename1">My state</span> ranks <span id="categoryRank" class="categoryRank">#</span> in
 
                                 </span>
                                 <div class="menuContainer active onLoadClass" id="categoryContainer">
@@ -153,11 +153,11 @@
                                     </select>
 
                                     <span class="sentence"> spending
-                                        on families and children</span>
+                                        on families and children.</span>
                                     <br>
                                     <span class="sentence">
-                                        Abortion access in <span id="statename2">My State</span> is classified as <span
-                                            id="abortionRank">status</span>.
+                                        Abortion access in <span id="statename2" class="statename2">My State</span> is classified as <span
+                                            id="abortionRank" class="abortionRank">status</span>.
                                     </span>
 
                                 </div>
@@ -742,12 +742,28 @@
         width: 80%;
         text-align: center;
         line-height: 58px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     span.sentence {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 100;
+    }
+
+    .statename1{
+        font-weight: 800;
+    }
+
+    .statename2{
+        font-weight: 800;
+    }
+
+    .categoryRank{
+        font-weight: 800;
+    }
+
+    .abortionRank{
+        font-weight: 800;
     }
 
     #locationContainer,
