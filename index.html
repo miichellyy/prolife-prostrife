@@ -173,7 +173,7 @@
                         <!-- </section> -->
 
 
-                        <div class="flourish-embed" data-src="story/1770447" data-height='75vh'>
+                        <div class="flourish-embed" data-src="story/1770447" data-height="75vh">
                             <script src="https://public.flourish.studio/resources/embed.js"></script>
                         </div>
                         <p class="invisible"><a href="#story/1770447/slide-1"></a></p>
@@ -189,11 +189,11 @@
                         <br>
                     </div>
 
-                    <h4 class="directions">Slide to see the what the Governor of Mississippi thinks about the overturn
+                    <!--  <h4 class="directions">Slide to see the what the Governor of Mississippi thinks about the overturn
                         of Roe and the economic impact on women.</h4>
-                    <div class="flourish-embed flourish-photo-slider" data-src="visualisation/12110443" data-height='80vh'>
+                    <div class="flourish-embed flourish-photo-slider" data-src="visualisation/12110443" height='100vh'>
                         <script src="https://public.flourish.studio/resources/embed.js"></script>
-                    </div>
+                    </div> -->
 
                     <!-- <div id="my-wrapper">
                             <div class="headlines.life">
@@ -235,7 +235,7 @@
 
 
 
-                    <div class="flourish-embed" data-src="story/1770472" data-height='75vh'>
+                    <div class="flourish-embed" data-src="story/1770472" data-height="75vh">
                         <script src="https://public.flourish.studio/resources/embed.js"></script>
                     </div>
                     <p class="invisible"><a href="#story/1770472/slide-1"></a></p>
@@ -259,7 +259,7 @@
                     <br>
                 </div>
 
-                <div class="flourish-embed" data-src="story/1762540" data-height='75vh'>
+                <div class="flourish-embed" data-src="story/1762540" data-height="75vh">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
                 <!-- Here is where you add your captions, linking them to specific slides in the story -->
@@ -282,7 +282,7 @@
                 <h4 class="directions">Roll over to learn more about what's included in each category.</h4>
 
                 <div>
-                    <div class="row" style=justify-content: center>
+                    <div class="row justify-content-center align-items-center">
                         <div class="column">
                             <div style='display: flex; justify-content: center;' class="rollover1">
                             </div>
@@ -315,7 +315,7 @@
 
                 <h2>How do pro-life and pro-choice states stack up in spending by category?</h2>
 
-                <!--  <div class="flourish-embed" data-src="story/1769151" data-height='75vh'>
+                <!--  <div class="flourish-embed" data-src="story/1769151" width="80%">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
                 <p>There is a 26% decrease in spending on education in <span class="proLife">pro-life
@@ -340,7 +340,7 @@
 
                 <br> -->
                 <h4 class="directions">Click through to learn more about average spending in each category.</h4>
-                <div class="flourish-embed" data-src="story/1770479" data-height='75vh'>
+                <div class="flourish-embed" data-src="story/1770479" data-height="75vh">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
 
@@ -357,11 +357,10 @@
                     ranks.
                     States are ordered by reproductive rights scores.</h4>
 
-                <div class="background">
-                    <div class="flourish-embed flourish-heatmap" data-src="visualisation/12012702" >
-                        <script src="https://public.flourish.studio/resources/embed.js"></script>
-                    </div>
+                <div class="flourish-embed flourish-heatmap" data-src="visualisation/12012702">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
+
                 <div class="container">
                     <br>
                     <hr width="50%">
@@ -369,7 +368,7 @@
                     <br>
                 </div>
 
-                <div class="flourish-embed flourish-map" data-src="visualisation/11864887">
+                <div class="flourish-embed flourish-map" data-src="visualisation/11864887" data-height="75vh">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
 
@@ -427,7 +426,7 @@
 <!-- Initialize the library to turn your story into scrolly magic! -->
 <script>
     initFlourishScrolly({
-        trigger_point: "10%",
+        trigger_point: "5%",
         offset_top: "20px",
         step_styles: {
             background: "white",
@@ -448,7 +447,7 @@
     .body {
         background-color: #ffffff;
         max-width: 800px;
-        margin: auto;
+        margin: 0 auto;
         align-content: center;
 
     }
@@ -467,7 +466,6 @@
     }
 
     .margins {
-        width: 80%;
         padding: 0;
         margin: 0 auto;
 
@@ -586,7 +584,7 @@
 
     }
 
-    image {
+    .image {
         margin-left: auto;
         margin-right: auto;
         object-fit: contain;
@@ -651,11 +649,15 @@
 
     .flourish-embed {
         align-content: center;
+        /* margin-top: 200px; */
+        /* margin-bottom: -105px; */
     }
-	
-#flourish-embed {
+
+    #flourish-embed {
         align-content: center;
+        display: block;
     }
+
 
     /* To hide a caption, add class="invisible" to the <p> tag of that caption */
     .invisible {
@@ -664,9 +666,10 @@
 
     .rollover1 {
         display: block;
-        width: 175px;
-        height: 190px;
-        background: url("./Images/education_front_tiny.svg") no-repeat;
+        width: 225px;
+        height: 225px;
+        margin: auto;
+        background: url("./Images/education_medium_front.svg") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
@@ -674,14 +677,14 @@
     }
 
     .rollover1:hover {
-        background: url(./Images/education_back_tiny.svg)
+        background: url(./Images/education_medium_back.svg)
     }
 
     .rollover2 {
         display: block;
-        width: 175px;
-        height: 190px;
-        background: url("./Images/payments_front_tiny-10.svg") no-repeat;
+        width: 225px;
+        height: 225px;
+        background: url("./Images/payments_medium_font.svg") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
@@ -689,14 +692,14 @@
     }
 
     .rollover2:hover {
-        background: url(./Images/payments_back_tiny.svg)
+        background: url(./Images/payments_medium_back.svg)
     }
 
     .rollover3 {
         display: block;
-        width: 175px;
-        height: 190px;
-        background: url("./Images/health_front_tiny.svg") no-repeat;
+        width: 225px;
+        height: 225px;
+        background: url("./Images/health_medium_front.svg") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
@@ -704,14 +707,14 @@
     }
 
     .rollover3:hover {
-        background: url(./Images/health_back_tiny.svg)
+        background: url(./Images/health_medium_back.svg)
     }
 
     .rollover4 {
         display: block;
-        width: 175px;
-        height: 190px;
-        background: url("./Images/public_front_tiny.svg") no-repeat;
+        width: 225px;
+        height: 225px;
+        background: url("./Images/resources_medium_front.svg") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
@@ -719,14 +722,14 @@
     }
 
     .rollover4:hover {
-        background: url(./Images/public_back_tiny.svg)
+        background: url(./Images/public_medium_back.svg)
     }
 
     .rollover5 {
         display: block;
-        width: 175px;
-        height: 190px;
-        background: url("./Images/housing_front_tiny.svg") no-repeat;
+        width: 225px;
+        height: 225px;
+        background: url("./Images/housing_medium_front.svg") no-repeat;
         -webkit-transition: all .7s ease-in-out;
         -moz-transition: all .7s ease-in-out;
         -o-transition: all .7s ease-in-out;
@@ -734,10 +737,9 @@
     }
 
     .rollover5:hover {
-        background: url(./Images/housing_back_tiny.svg)
+        background: url(./Images/housing_medium_back.svg)
     }
 
-    .centerRollover {}
 
     #controls {
         width: 100%;
@@ -745,7 +747,7 @@
 
     #sentence {
         font-family: 'Roboto Condensed', sans-serif;
-        top: 60px;
+        padding-top: 60px;
         position: relative;
         margin: 0 auto;
         width: 80%;
@@ -755,8 +757,9 @@
     }
 
     span.sentence {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 100;
+        line-height: 58px;
     }
 
     .statename1 {
@@ -907,8 +910,8 @@
         text-overflow: ellipsis;
         font-family: 'Roboto Condensed';
         font-weight: 100;
-        margin-top: -5px;
-        font-size: 24px;
+        margin-top: -9px;
+        font-size: 30px;
     }
 
     .ui-widget-content {
